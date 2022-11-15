@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Following product name components are shown if relevant:
+Line 1: &lt;Brand> &lt;Product line>
+Line 2: &lt;Name category> &lt;Type>
+Line 3: &lt;Attributes></description>
+   <name>ProductName</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>299cd456-9900-4365-94b2-58310912e22f</testCaseGuid>
+</TestCaseEntity>

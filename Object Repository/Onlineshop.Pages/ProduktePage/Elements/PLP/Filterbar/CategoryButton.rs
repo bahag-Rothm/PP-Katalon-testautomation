@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CategoryButton</name>
+   <tag></tag>
+   <elementGuidId>a58a7483-4fa5-4acb-8e51-cb9cb8a3da71</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//button[@data-collapse-target='navigation-facet-card-body-category']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//button[@data-collapse-target='navigation-facet-card-body-category']</value>
+      <webElementGuid>ececee8c-fc2f-40f8-8e74-6693d6ae9fd4</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

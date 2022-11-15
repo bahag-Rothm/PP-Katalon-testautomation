@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Product Detail Page - Availability in the selected center</description>
+   <name>TestCase71 - RW</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2159f77f-ac6b-4085-97a4-7d054a4005fa</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6296124e-c161-4fa0-aa19-06aa00a26387</id>
+      <masked>false</masked>
+      <name>Country</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b43c5cbf-542b-4620-9aa9-7a898cdf9f6b</id>
+      <masked>false</masked>
+      <name>ITEMNUMBER</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e2cb8602-b9f0-4f4e-b0d5-99f77e263029</id>
+      <masked>false</masked>
+      <name>Keyword</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5e0cb4a9-4925-438c-add6-f813a0e386b2</id>
+      <masked>false</masked>
+      <name>Availability</name>
+   </variable>
+</TestCaseEntity>

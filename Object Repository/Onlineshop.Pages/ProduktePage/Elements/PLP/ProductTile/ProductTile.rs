@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ProductTile</name>
+   <tag></tag>
+   <elementGuidId>9850c72a-cb79-4edd-9597-8f5117ecd3dd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@class='product-list-tile__content-wrapper']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@class='product-list-tile__content-wrapper']</value>
+      <webElementGuid>c0460949-6249-4cc3-aa1b-d0ba15a9ab92</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

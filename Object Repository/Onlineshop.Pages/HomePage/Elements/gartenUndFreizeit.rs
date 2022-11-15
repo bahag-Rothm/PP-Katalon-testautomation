@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>GartenUndFreizeit</name>
+   <tag></tag>
+   <elementGuidId>538acdb5-1c11-40cd-bc33-d6ecbac7ed55</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//li[@data-code='10000910']//a[1]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//li[@data-code='10000910']//a[1]</value>
+      <webElementGuid>f641a489-ec47-40e0-9dd4-d7a7fcd116ab</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

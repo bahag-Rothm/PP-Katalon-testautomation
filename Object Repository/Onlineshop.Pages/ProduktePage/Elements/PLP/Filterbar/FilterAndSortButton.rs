@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>FilterAndSortButton</name>
+   <tag></tag>
+   <elementGuidId>d8e5b9f5-f722-429f-a599-9007690179fa</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>button#navigation-facet-toggle</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//button[@data-message='adb-open-filter-layer-button']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//button[@data-message='adb-open-filter-layer-button']</value>
+      <webElementGuid>dbe1e867-34b4-42a8-ba71-d024bfbc62df</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

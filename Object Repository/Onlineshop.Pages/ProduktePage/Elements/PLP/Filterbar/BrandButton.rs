@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>BrandButton</name>
+   <tag></tag>
+   <elementGuidId>625bae7e-5b36-45f5-baed-1ae37415d272</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//button[@data-collapse-target='navigation-facet-card-body-brands']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//button[@data-collapse-target='navigation-facet-card-body-brands']</value>
+      <webElementGuid>39c08f4d-0932-4cd6-b1f3-bdb2a7dde314</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

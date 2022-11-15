@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>PriceButton</name>
+   <tag></tag>
+   <elementGuidId>f8ab55f9-0f83-4539-a838-c875fb888207</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//button[@data-collapse-target='navigation-facet-card-body-visiblePrice']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//button[@data-collapse-target='navigation-facet-card-body-visiblePrice']</value>
+      <webElementGuid>9416b950-beec-4454-9f61-57184860025e</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

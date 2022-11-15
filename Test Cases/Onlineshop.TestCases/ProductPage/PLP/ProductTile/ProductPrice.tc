@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Following prices and price components are shown if relevant:
+Price
+Strike price
+Promotion price
+Unit
+Base unit
+Scale price icon</description>
+   <name>ProductPrice</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>42e6b875-df39-4a4e-a89e-2dd8a78c76d5</testCaseGuid>
+</TestCaseEntity>

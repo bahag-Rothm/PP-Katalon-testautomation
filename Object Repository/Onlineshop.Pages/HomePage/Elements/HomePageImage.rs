@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>HomePageImage</name>
+   <tag></tag>
+   <elementGuidId>67049a4e-8317-427c-8b26-59131f4449cd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;js_header-meta&quot;]/div/div/div[1]/div/a/picture/img</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@img = 'img']</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>img</name>
+      <type>Main</type>
+      <value>img</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <type>Main</type>
+      <value>img</value>
+   </webElementXpaths>
+</WebElementEntity>

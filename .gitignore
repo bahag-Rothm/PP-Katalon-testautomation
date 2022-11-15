@@ -1,0 +1,11 @@
+/bin
+/Libs
+/.classpath
+/.svn
+Reports/
+.project
+.cache
+/setting/internal/com.kms.katalon.core.webservice.*
+/setting/internal/com.kms.katalon.composer.*
+/setting/internal/com.kms.katalon.execution.*
+/setting/internal/com.kms.katalon.integration.*

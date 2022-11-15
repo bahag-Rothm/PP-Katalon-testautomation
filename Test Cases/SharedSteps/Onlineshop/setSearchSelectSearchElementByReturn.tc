@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SharedStep - Search Item (POP)</description>
+   <name>setSearchSelectSearchElementByReturn</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>21612266-0bfa-4322-b1ec-c1542bfda131</testCaseGuid>
+   <variable>
+      <defaultValue>this.null</defaultValue>
+      <description></description>
+      <id>a8024e5b-8b86-4344-8acc-25f3dfb11b15</id>
+      <masked>false</masked>
+      <name>ITEMNUMBER</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Filter bar is shows button &quot;Filter &amp; Sortierung&quot; and 6 most used filters.
+If the width of browser is smaller than the bar, then it becomes a slider.
+If the user is scrolling down, the filter bar remains below the header (sticky).</description>
+   <name>CheckFilterbar</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c583929a-e614-472c-840e-6c8281a0473b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>dc6b99cb-45fb-42a3-80a5-13ca4411f170</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ffac83e8-772d-4ded-a3c4-b50ba7e92bff</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ba37fa2b-ce8e-4d83-89ea-9423cf718ac2</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>dc6b99cb-45fb-42a3-80a5-13ca4411f170</id>
+      <masked>false</masked>
+      <name>countryId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ffac83e8-772d-4ded-a3c4-b50ba7e92bff</id>
+      <masked>false</masked>
+      <name>category</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ba37fa2b-ce8e-4d83-89ea-9423cf718ac2</id>
+      <masked>false</masked>
+      <name>productNr</name>
+   </variable>
+</TestCaseEntity>

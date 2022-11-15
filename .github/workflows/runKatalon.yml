@@ -1,0 +1,76 @@
+name: Run katalon-frontend-tests on DEV / QS
+
+on:
+    workflow_dispatch:
+        inputs:
+            test_suite_collection:
+                description: Test Suite Collection to be run with the Workflow
+                required: true
+                type: choice
+                options:
+                    - DEV01_Checkout_Process
+                    - DEV02_Checkout_Process
+                    - DEV03_Checkout_Process
+                    - DEV04_Checkout_Process
+                    - DEV05_Checkout_Process
+                    - DEV06_Checkout_Process
+                    - DEV07_Checkout_Process
+                    - QS_Checkout_Process
+
+jobs:
+    build:
+        name: Run katalon-frontend-tests
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v1
+
+            - name: Install network manager openconnect
+              run: |
+                  sudo apt-get install network-manager-openconnect
+
+            - name: Setup Java 8
+              uses: actions/setup-java@v2
+              with:
+                  java-version: '8'
+                  distribution: 'temurin'
+
+            - name: Setup Node 14
+              uses: actions/checkout@v3
+            - uses: actions/setup-node@v3
+              with:
+                  node-version: 14
+
+            - name: Checkout repo
+              uses: actions/checkout@v2
+
+            - name: Extract Cisco AnyConnect VPN Client
+              run: |
+                  cd github_action_libs
+                  tar xvzf anyconnect-linux64-*-predeploy-*.tar.gz
+
+            - name: Install Cisco AnyConnect VPN Client
+              run: |
+                  cd github_action_libs/anyconnect-linux64-*/vpn
+                  sudo echo "y" | sudo ./vpn_install.sh
+
+            - name: Connect VPN
+              run: |
+                  cd github_action_libs/anyconnect-linux64-*/vpn
+                  printf "${{ secrets.VPN_GROUPNAME }}\n${{ secrets.VPN_USERNAME }}\n${{ secrets.VPN_PASSWORD }}\ny" | ./vpn -s connect ${{ secrets.VPN_HOST }}
+
+            - name: Temp. Test VPN
+              run: |
+                  ping -c 5 dev-all-07.hybris.bahag.plusline.net
+                  ping -c 5 pps-qs-intern.bauhaus.info
+
+            #- name: Katalon Studio Github Action
+            #  uses: katalon-studio/katalon-studio-github-action@v2.2
+            #  with:
+            #      version: '8.3.5'
+            #      projectPath: '${{ github.workspace }}'
+            #      args: '-noSplash -retry=0 -testSuiteCollectionPath="Test Suites/Collection/${{ github.event.inputs.test_suite_collection }}" -browserType="Chrome (headless)" -apiKey= ${{ secrets.API_KEY }} --config -webui.autoUpdateDrivers=true'
+
+            - name: Disconnect VPN
+              run: |
+                  cd github_action_libs/anyconnect-linux64-*/vpn
+                  ./vpn -s disconnect ${{ secrets.VPN_HOST }}

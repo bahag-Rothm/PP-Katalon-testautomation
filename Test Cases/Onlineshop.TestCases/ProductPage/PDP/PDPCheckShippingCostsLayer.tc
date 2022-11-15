@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Product Detail Page - Check Shipping Costs Layer</description>
+   <name>PDPCheckShippingCostsLayer</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c1f0ad80-6378-4a3f-9eb1-af007458dcb4</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7d6f1653-64d4-4a2e-b2db-e302fe2f2ad4</id>
+      <masked>false</masked>
+      <name>Country</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a2b340f0-8663-41e1-a4e6-533fa193c3c3</id>
+      <masked>false</masked>
+      <name>ItemNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>11924717-ab82-40aa-bf56-f15a69b0fc87</id>
+      <masked>false</masked>
+      <name>ShippingMethod</name>
+   </variable>
+</TestCaseEntity>

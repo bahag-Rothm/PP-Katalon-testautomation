@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Product images are shown</description>
+   <name>ProductImage</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9c9bebe9-60c7-4510-b1e7-fc6404fedbca</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9df5a073-b85e-4cb4-8023-3ca75cf8b8f0</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>26097c25-bff0-41cf-a1dc-a945c4aa6b3f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>885e0c4b-64f2-416e-b417-a5a62396fdc3</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9df5a073-b85e-4cb4-8023-3ca75cf8b8f0</id>
+      <masked>false</masked>
+      <name>countryId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>26097c25-bff0-41cf-a1dc-a945c4aa6b3f</id>
+      <masked>false</masked>
+      <name>category</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>885e0c4b-64f2-416e-b417-a5a62396fdc3</id>
+      <masked>false</masked>
+      <name>productNr</name>
+   </variable>
+</TestCaseEntity>

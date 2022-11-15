@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ChangeStoreFromReserveButton</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>738e90d4-78b8-4233-b5e7-b1884a489cc8</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8577ea9f-582b-4782-aa33-4f7533b04c93</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8577ea9f-582b-4782-aa33-4f7533b04c93</id>
+      <masked>false</masked>
+      <name>STORENAME</name>
+   </variable>
+</TestCaseEntity>

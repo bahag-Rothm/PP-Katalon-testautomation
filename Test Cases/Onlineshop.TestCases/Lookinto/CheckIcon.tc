@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check icon of home page.</description>
+   <name>CheckIcon</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>277f2809-8933-4cc0-89d6-e4ddb26475a5</testCaseGuid>
+   <variable>
+      <defaultValue>'DE'</defaultValue>
+      <description></description>
+      <id>59dcebcb-06f5-47e0-a60e-6187dd951d03</id>
+      <masked>false</masked>
+      <name>CountryId</name>
+   </variable>
+</TestCaseEntity>

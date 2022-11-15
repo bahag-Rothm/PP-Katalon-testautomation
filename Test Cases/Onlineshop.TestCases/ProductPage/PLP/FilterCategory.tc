@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Lightbox facet navigation opens.
+Category filter is expanded and shows sub categories. with numbers of products.
+If a category has no sub categories, then no arrow is shown behind the category.
+By navigation to lower or higher levels, the number of products in the button &quot;Produke anzeigen&quot; will be adapted.
+Navigation level is not shown in filter bar.</description>
+   <name>FilterCategory</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cee4f396-2576-4baf-b543-d2528d90b922</testCaseGuid>
+</TestCaseEntity>

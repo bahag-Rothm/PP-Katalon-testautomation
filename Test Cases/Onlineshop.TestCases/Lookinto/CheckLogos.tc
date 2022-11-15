@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Product Detail Page - Check Logos</description>
+   <name>CheckLogos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>06751065-b9b4-413c-9e9f-b32e5d0ec2ea</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5d235add-6d59-4cd8-b849-ecdaf06cff26</id>
+      <masked>false</masked>
+      <name>Country</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>36f49332-05b0-4e75-8796-4b6e44a88df4</id>
+      <masked>false</masked>
+      <name>ItemNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0954435c-4ac8-4cf3-a57e-10dc1bc9166d</id>
+      <masked>false</masked>
+      <name>NumberOfLogos</name>
+   </variable>
+</TestCaseEntity>

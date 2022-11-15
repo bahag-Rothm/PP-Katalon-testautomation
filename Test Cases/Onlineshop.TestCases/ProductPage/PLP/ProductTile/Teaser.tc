@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Teasers are shown on defined positions
+Click on Teaser opens linked page</description>
+   <name>Teaser</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0211910b-a3d3-48b9-abc2-4ca8f34ca090</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Product Detail Page - Product description details</description>
+   <name>TestCase70</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>66f98d2e-e845-4f5d-a716-d11e98007882</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c44127d6-d2b3-432a-a7ca-e585c84bb716</id>
+      <masked>false</masked>
+      <name>Country</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>509349c8-59b8-438e-9c96-de204e97faca</id>
+      <masked>false</masked>
+      <name>ItemNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d32fd6ce-3b03-4b75-81d0-61ee999d4b36</id>
+      <masked>false</masked>
+      <name>NumberOfProperties</name>
+   </variable>
+</TestCaseEntity>

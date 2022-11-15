@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Product Detail Page - Check Labels</description>
+   <name>TestCase62 - Visual</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d64b556a-f856-419f-a850-b821219824c3</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a1efdadc-e9ff-4773-8393-423a2303619d</id>
+      <masked>false</masked>
+      <name>Country</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9b8b3d3e-9a82-4148-87e9-5af56f84b3d9</id>
+      <masked>false</masked>
+      <name>ItemNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>36e2370a-1616-42ab-8739-32619a82e794</id>
+      <masked>false</masked>
+      <name>NumberOfLabels</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>LabelCategory</name>
+   <tag></tag>
+   <elementGuidId>004be383-66ff-48ed-bc72-d7f66a722411</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>html>body>main>div:nth-of-type(3)>div>div>h1</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@class='content-wrapper']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@class='content-wrapper']</value>
+      <webElementGuid>f74a93fc-e72a-4ee7-9244-1ceeaff0b8b7</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

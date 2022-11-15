@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>More products will be loaded
+PDP is shown
+When jumping to a PDP and jumping back to the PLP, 108 products are displayed in the list.
+The product that was jumped back from is in focus.
+Pagination: 108 or more out of 999 products</description>
+   <name>LastSeenPage</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9a1811de-e5a3-4b9b-8170-600759a15bd4</testCaseGuid>
+</TestCaseEntity>

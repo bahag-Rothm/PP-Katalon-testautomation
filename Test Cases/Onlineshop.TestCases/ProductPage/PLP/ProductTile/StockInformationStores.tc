@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Store not selected: &quot;BAUHAUS wählen&quot; (light grey)
+In store available and reservable: &quot;In &lt;Store name> reservierbar&quot; (Green)
+In store available and not reservable: &quot;In &lt;Store name> verfügbar&quot; (Green)
+In store not available and online not available: &quot;In &lt;Store name> nicht verfügbar&quot; (Light grey)
+In store not available and online vailable: &quot;In &lt;Store name> bestellbar&quot; (Orange)</description>
+   <name>StockInformationStores</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>de7ba7e8-dfec-49b3-bd67-66482a67e873</testCaseGuid>
+</TestCaseEntity>

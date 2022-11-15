@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Lightbox facet navigation opens.
+By selecting more than one filter the number of products in the button &quot;Produke anzeigen&quot; will be adapted.
+Status of the filters is shown in the filter bar.
+By clicking the button &quot;Alle Filter zurücksetzen&quot; all selected filters will be deslected.</description>
+   <name>ButtonDeleteAllFilter</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>939ace40-6e7b-4937-98f2-f8726e3a60b8</testCaseGuid>
+</TestCaseEntity>

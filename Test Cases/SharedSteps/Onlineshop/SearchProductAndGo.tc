@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SearchProductAndGo</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a343f67e-fdfd-4194-b0ba-268b8ea87a14</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0d5b1a07-eade-454f-b7e9-1198572c8de5</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0d5b1a07-eade-454f-b7e9-1198572c8de5</id>
+      <masked>false</masked>
+      <name>ITEMNUMBER</name>
+   </variable>
+</TestCaseEntity>

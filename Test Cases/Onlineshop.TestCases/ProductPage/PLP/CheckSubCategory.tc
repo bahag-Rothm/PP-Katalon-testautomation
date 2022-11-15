@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>The Subcategorie label is always shown</description>
+   <name>CheckSubCategory</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a59dd48a-dd71-4182-a6e2-7b631ebc1033</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b38c475e-b736-4757-a99e-16fb1a540d34</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f061edef-f00b-4f84-8015-16f281a2f6ee</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7cfcb225-1da7-42d2-b65c-fc6cf5be689c</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b38c475e-b736-4757-a99e-16fb1a540d34</id>
+      <masked>false</masked>
+      <name>countryId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f061edef-f00b-4f84-8015-16f281a2f6ee</id>
+      <masked>false</masked>
+      <name>category</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7cfcb225-1da7-42d2-b65c-fc6cf5be689c</id>
+      <masked>false</masked>
+      <name>productNr</name>
+   </variable>
+</TestCaseEntity>

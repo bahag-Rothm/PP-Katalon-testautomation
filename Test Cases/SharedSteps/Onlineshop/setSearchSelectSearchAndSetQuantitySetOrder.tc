@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Search+Select Item and order with quantity</description>
+   <name>setSearchSelectSearchAndSetQuantitySetOrder</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a9b785e3-038c-4f9f-a8f3-1cf99f769b5e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>456399bb-fcf0-43dd-8250-e714c5e6a07a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f5ff5810-d78d-4f70-8c70-79fa19937c51</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>79b410db-693f-4a2c-944f-418daeaa3e13</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>this.null</defaultValue>
+      <description></description>
+      <id>456399bb-fcf0-43dd-8250-e714c5e6a07a</id>
+      <masked>false</masked>
+      <name>ITEMNUMBER</name>
+   </variable>
+   <variable>
+      <defaultValue>this.null</defaultValue>
+      <description></description>
+      <id>f5ff5810-d78d-4f70-8c70-79fa19937c51</id>
+      <masked>false</masked>
+      <name>QUANTITY</name>
+   </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>79b410db-693f-4a2c-944f-418daeaa3e13</id>
+      <masked>false</masked>
+      <name>switchMethod</name>
+   </variable>
+</TestCaseEntity>

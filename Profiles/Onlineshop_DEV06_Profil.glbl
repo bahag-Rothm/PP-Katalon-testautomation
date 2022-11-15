@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>Onlineshop_DEV06_Profil</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[('cart') : '/cart', ('myAccount') : '/mein-konto', ('login') : '/login', ('link') : 'https://dev-all-06.hybris.bahag.plusline.net:9002', ('fachcentrensuche') : '/fachcentren/fachcentrensuche', ('leihservice') : '/service/leistungen/leihservice', ('editBillingAddress') : '/mein-konto/adressverwaltung/rechnungsadresse-bearbeiten', ('addressManagement') : '/mein-konto/adressverwaltung', ('personalData') : '/mein-konto/persoenliche-daten', ('checkout') : '/checkout/step1']</initValue>
+      <name>DE</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[('cart') : '/cart', ('myAccount') : '/mein-konto', ('login') : '/login', ('link') : 'https://atshop.dev-all-06.hybris.bahag.plusline.net:9002', ('fachcentrensuche') : '/fachcentren/fachcentrensuche', ('editBillingAddress') : '/mein-konto/adressverwaltung/rechnungsadresse-bearbeiten', ('addressManagement') : '/mein-konto/adressverwaltung', ('personalData') : '/mein-konto/persoenliche-daten', ('checkout') : '/checkout/step1']</initValue>
+      <name>AT</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[('cart') : '/cart', ('myAccount') : '/mijn-account', ('login') : '/login', ('link') : 'https://nlshop.dev-all-06.hybris.bahag.plusline.net:9002', ('fachcentrensuche') : '/bouwcentra/groningen', ('editBillingAddress') : '/mijn-account/adresgegevens/factuuradres-wijzigen', ('addressManagement') : '/mijn-account/adresgegevens', ('personalData') : '/mijn-account/persoonlijke-gegevens', ('checkout') : '/checkout/step1']</initValue>
+      <name>NL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[('cart') : '/cart', ('myAccount') : '/mi-cuenta', ('login') : '/login', ('link') : 'https://es.dev-all-06.hybris.bahag.plusline.net:9002', ('fachcentrensuche') : '/centros-bauhaus-tiendas/buscar', ('editBillingAddress') : '/mi-cuenta/direcciones/direccion-facturacion', ('addressManagement') : '/mi-cuenta/direcciones', ('personalData') : '/mi-cuenta/mis-datos', ('checkout') : '/checkout/step1']</initValue>
+      <name>ES</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[('cart') : '/cart', ('myAccount') : '/moj-racun', ('login') : '/login', ('link') : 'https://hr.dev-all-06.hybris.bahag.plusline.net:9002', ('fachcentrensuche') : '/fachcentren/fachcentrensuche', ('editBillingAddress') : '/moj-racun/upravljanje-adresom/adresa-racuna-obrada', ('addressManagement') : '/moj-racun/upravljanje-adresom', ('personalData') : '/moj-racun/osobni-podaci', ('checkout') : '/checkout/step1']</initValue>
+      <name>HR</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

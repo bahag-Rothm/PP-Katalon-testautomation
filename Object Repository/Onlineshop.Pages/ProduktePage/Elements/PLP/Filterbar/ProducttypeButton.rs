@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ProducttypeButton</name>
+   <tag></tag>
+   <elementGuidId>fe90d058-6cc3-4a14-8442-f0e68434007a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//button[@data-collapse-target='navigation-facet-card-body-ProductType']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//button[@data-collapse-target='navigation-facet-card-body-ProductType']</value>
+      <webElementGuid>ed5cace6-3d2e-4ac8-925a-42e9926a6440</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Viewport M&amp;L
+Category name is shown with number of products and product variants.
+Viewport S
+Category name is shown with number of products</description>
+   <name>CheckTitleProductAndVariants</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3451b432-edd3-4d72-b673-dafce11bfdb6</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b771f863-5731-4e76-a274-05702729495f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>39759053-4120-4d3f-bfba-ed71d0b461d3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2b0de4f8-6d50-4ae4-9136-868e22b48fcf</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b771f863-5731-4e76-a274-05702729495f</id>
+      <masked>false</masked>
+      <name>countryId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>39759053-4120-4d3f-bfba-ed71d0b461d3</id>
+      <masked>false</masked>
+      <name>category</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2b0de4f8-6d50-4ae4-9136-868e22b48fcf</id>
+      <masked>false</masked>
+      <name>productNr</name>
+   </variable>
+</TestCaseEntity>
