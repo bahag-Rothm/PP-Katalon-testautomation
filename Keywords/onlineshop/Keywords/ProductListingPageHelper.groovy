@@ -94,11 +94,11 @@ public class ProductListingPageHelper {
 		KeywordUtil.logInfo("Title is visible: "+flag);
 
 		if(flag == "true") {
-			KeywordUtil.logInfo("Category Title exist");
+			KeywordUtil.logInfo("Category title exist");
 			return true
 		}
 		else {
-			KeywordUtil.logInfo("Category Title not exist");
+			KeywordUtil.logInfo("Category title not exist");
 			return false
 		}
 	}
@@ -114,7 +114,7 @@ public class ProductListingPageHelper {
 			return true
 		}
 		else {
-			KeywordUtil.logInfo("Number of products  not exist");
+			KeywordUtil.logInfo("Number of products not exist");
 			return false
 		}
 	}
@@ -126,11 +126,11 @@ public class ProductListingPageHelper {
 		KeywordUtil.logInfo("Title is visible: "+flag);
 
 		if(flag == "true") {
-			KeywordUtil.logInfo("Subcategory Title exist");
+			KeywordUtil.logInfo("Subcategory title exist");
 			return true
 		}
 		else {
-			KeywordUtil.logInfo("Subcategory Title not exist");
+			KeywordUtil.logInfo("Subcategory title not exist");
 			return false
 		}
 	}
@@ -141,13 +141,13 @@ public class ProductListingPageHelper {
 		int width = WebUI.getViewportWidth();
 		int mobileViewPort = 660;
 		if( test == true) {
-			KeywordUtil.logInfo("Variants are Visible: " + test);
+			KeywordUtil.logInfo("Variants are visible: " + test);
 		}
 		else {
-			KeywordUtil.logInfo("Variants are Visible: " + test);
+			KeywordUtil.logInfo("Variants are visible: " + test);
 		}
 
-		KeywordUtil.logInfo("The Width is: " + width);
+		KeywordUtil.logInfo("The width is: " + width);
 
 		if(test == "true"){
 			if(width > mobileViewPort) {
@@ -268,13 +268,13 @@ public class ProductListingPageHelper {
 		KeywordUtil.logInfo("Subcategory button is visible: "+ subCategoryButton);
 
 		if(subCategoryButton == "true") {
-			KeywordUtil.logInfo("Category button exist");
+			KeywordUtil.logInfo("Subcategory button exist");
 
 			String clickButton = WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/FilterSidebar/ToGardenFurniture'))
 			return true
 		}
 		else {
-			KeywordUtil.logInfo("Category button not exist");
+			KeywordUtil.logInfo("Subcategory button not exist");
 			return false
 		}
 	}
@@ -284,7 +284,7 @@ public class ProductListingPageHelper {
 
 		//Insert Object
 		String backToGarden = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/FilterSidebar/BackToGarden'), 5)
-		KeywordUtil.logInfo("Subcategory button is visible: "+ backToGarden);
+		KeywordUtil.logInfo("Back to garden button is visible: "+ backToGarden);
 
 		if(backToGarden == "true") {
 			KeywordUtil.logInfo("Back to garden button exist");
@@ -340,15 +340,15 @@ public class ProductListingPageHelper {
 
 
 		String PriceButton = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/FilterSideBar/SideBarPriceButton'), 5)
-		KeywordUtil.logInfo("Price button is visible: "+ PriceButton);
+		KeywordUtil.logInfo("Filterbar price button is visible: "+ PriceButton);
 
 		if(PriceButton == "true") {
 			String PriceButton2 = WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/FilterSideBar/SideBarPriceButton'))
-
+			KeywordUtil.logInfo("Filterbar price button exist");
 			return true
 		}
 		else {
-			KeywordUtil.logInfo("Price button not exist");
+			KeywordUtil.logInfo("Filterbar price button not exist");
 			return false
 		}
 	}
@@ -416,11 +416,11 @@ public class ProductListingPageHelper {
 		KeywordUtil.logInfo(ProductNumberButton);
 
 		if(verifyProductNumberButton == "true") {
-			KeywordUtil.logInfo("Numbers are Shown");
+			KeywordUtil.logInfo("Numbers are shown");
 			return true
 		}
 		else {
-			KeywordUtil.logInfo("Numbers are not Shown");
+			KeywordUtil.logInfo("Numbers are not shown");
 			return false
 		}
 	}
@@ -436,11 +436,11 @@ public class ProductListingPageHelper {
 
 		if(verifyProductNumberButton == "true") {
 
-			KeywordUtil.logInfo("Numbers are Shown");
+			KeywordUtil.logInfo("click succesfull");
 			return true
 		}
 		else {
-			KeywordUtil.logInfo("Numbers are not Shown");
+			KeywordUtil.logInfo("click not succesfull");
 			return false
 		}
 	}
@@ -474,6 +474,7 @@ public class ProductListingPageHelper {
 
 		if(filterAndSortButton == "true") {
 			String filterAndSortButton2 = WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/Filterbar/FilterAndSortButton'))
+			KeywordUtil.logInfo("Filter and sort button exist");
 			return true
 		}
 		else {
@@ -492,11 +493,11 @@ public class ProductListingPageHelper {
 		if(minPrice == "true") {
 
 			WebUI.setText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/Filterbar/PriceminSlider'), "54")
-
+			KeywordUtil.logInfo("Min price button exist and price is set to 54");
 			return true
 		}
 		else {
-			KeywordUtil.logInfo("Filter and sort button not exist");
+			KeywordUtil.logInfo("Min price button not exist");
 			return false
 		}
 	}
@@ -508,11 +509,11 @@ public class ProductListingPageHelper {
 		String maxPrice = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/Filterbar/PriceMaxSlider'), 5)
 		WebUI.setText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/Filterbar/PriceMaxSlider'), "999")
 		if(maxPrice == "true") {
-
+			KeywordUtil.logInfo("Min price button exist and price is set to 999");
 			return true
 		}
 		else {
-			KeywordUtil.logInfo("Filter and sort button not exist");
+			KeywordUtil.logInfo("Min price button not exist");
 			return false
 		}
 	}
@@ -612,6 +613,7 @@ public class ProductListingPageHelper {
 
 		if(SortButton == "true") {
 			String SortButton2 = WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/Filterbar/SortingButton'))
+			KeywordUtil.logInfo("Sort button exist");
 			return true
 		}
 		else {
@@ -659,7 +661,7 @@ public class ProductListingPageHelper {
 		String Color = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/FilterSideBar/Color'), 5)
 		WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/FilterSideBar/Color'))
 		if(Color == "true") {
-
+			KeywordUtil.logInfo("Color button exist");
 			return true
 		}
 		else {
@@ -675,11 +677,11 @@ public class ProductListingPageHelper {
 		String firstColor = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/FilterSideBar/FirstColor'), 5)
 		WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/FilterSideBar/FirstColor'))
 		if(firstColor == "true") {
-
+			KeywordUtil.logInfo("First color not exist");
 			return true
 		}
 		else {
-			KeywordUtil.logInfo("firstColor not exist");
+			KeywordUtil.logInfo("First color not exist");
 			return false
 		}
 	}
@@ -725,11 +727,11 @@ public class ProductListingPageHelper {
 		KeywordUtil.logInfo("Brand button is visible: "+ SortingOnlineAvailable);
 
 		if(SortingOnlineAvailable == "true") {
-			KeywordUtil.logInfo("Sorting Online Available button exist");
+			KeywordUtil.logInfo("Sorting online available button exist");
 			return true
 		}
 		else {
-			KeywordUtil.logInfo("Sorting Online Available button not exist");
+			KeywordUtil.logInfo("Sorting online available button not exist");
 			return false
 		}
 	}
@@ -742,11 +744,11 @@ public class ProductListingPageHelper {
 		KeywordUtil.logInfo("PriceDESC button is visible: "+ PriceDESC);
 
 		if(PriceDESC == "true") {
-			KeywordUtil.logInfo("Brand button exist");
+			KeywordUtil.logInfo("Sorting price ASC button exist");
 			return true
 		}
 		else {
-			KeywordUtil.logInfo("Brand button not exist");
+			KeywordUtil.logInfo("Sorting price ASC button not exist");
 			return false
 		}
 	}
