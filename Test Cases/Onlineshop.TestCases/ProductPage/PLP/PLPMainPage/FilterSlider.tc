@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Lightbox facet navigation opens.
+   <description>All Viewports
+Lightbox facet navigation opens.
 Price filter is expanded and shows range of prices.
-By adapting the slider positions, the values in the input fields below are adapted accordingly, the link &quot;X Filter zurücksetzen&quot; appears and the number of products in the button &quot;Produke anzeigen&quot; will be adapted.
+By adapting the slider positions, the values in the input fields below are adapted accordingly, the link &quot;X Filter zurücksetzen&quot; appears and the number of products in the button &quot;Produkte anzeigen&quot; will be adapted.
 Status of the filter is shown in the filter bar.
 By clicking the button &quot;X Filter zurücksetzen&quot; the slider position and the input fields are showing the intial range.</description>
    <name>FilterSlider</name>

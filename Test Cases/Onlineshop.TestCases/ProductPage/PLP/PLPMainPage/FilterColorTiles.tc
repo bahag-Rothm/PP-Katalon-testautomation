@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Lightbox facet navigation opens.
+   <description>All Viewports
+Lightbox facet navigation opens.
 Base color filter is expanded and shows color tiles. Number of products is shown by mouse over.
-By selecting/deselecting colors the link &quot;X Filter zurücksetzen&quot; appears and the number of products in the button &quot;Produke anzeigen&quot; will be adapted.
+By selecting/deselecting colors the link &quot;X Filter zurücksetzen&quot; appears and the number of products in the button &quot;Produkte anzeigen&quot; will be adapted.
 Status of the filter is shown in the filter bar.
 By clicking the button &quot;X Filter zurücksetzen&quot; all selected brands will be deslected.</description>
    <name>FilterColorTiles</name>

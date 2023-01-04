@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Lightbox facet navigation opens.
+   <description>All Viewports
+Lightbox facet navigation opens.
 Brand filter is expanded and shows list of brands with numbers of products.
 By selecting/deselecting brands the link &quot;X Filter zurücksetzen&quot; appears and the number of products in the button &quot;Produke anzeigen&quot; will be adapted.
 Status of the filter is shown in the filter bar.

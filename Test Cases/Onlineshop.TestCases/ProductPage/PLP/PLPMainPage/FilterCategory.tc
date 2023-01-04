@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>Lightbox facet navigation opens.
+   <description>All Viewports
+Lightbox facet navigation opens.
 Category filter is expanded and shows sub categories. with numbers of products.
 If a category has no sub categories, then no arrow is shown behind the category.
 By navigation to lower or higher levels, the number of products in the button &quot;Produke anzeigen&quot; will be adapted.
