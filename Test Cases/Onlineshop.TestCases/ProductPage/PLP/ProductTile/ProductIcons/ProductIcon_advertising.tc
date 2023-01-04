@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Following icons are shown if relevant:
+Werbung
+Empfehlung
+Neu
+Garantie
+Set
+&lt;Number> Varianten</description>
+   <name>ProductIcon_advertising</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>723744df-9d5c-405d-b4a7-e60573ad6a77</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7276e6ba-84e8-4851-bc80-bdec140adc7f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4303df82-70e1-41f7-b49f-817bec4daeec</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>563213a9-0673-4dd8-8275-24bfe4a0d91b</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7276e6ba-84e8-4851-bc80-bdec140adc7f</id>
+      <masked>false</masked>
+      <name>countryId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4303df82-70e1-41f7-b49f-817bec4daeec</id>
+      <masked>false</masked>
+      <name>productNr</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>563213a9-0673-4dd8-8275-24bfe4a0d91b</id>
+      <masked>false</masked>
+      <name>countryLink</name>
+   </variable>
+</TestCaseEntity>

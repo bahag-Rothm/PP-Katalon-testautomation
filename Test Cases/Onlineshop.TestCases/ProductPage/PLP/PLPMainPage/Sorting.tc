@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Lightbox facet navigation opens.
+Tab &quot;Sortierung&quot; shows options:
+Sortierung nach Relevanz
+Niedrigster Preis zuerst
+Höchster Preis zuerst
+Alphabetisch aufsteigend
+Alphabetisch absteigend
+Online bestellbar zuerst
+Default option is &quot;Sortierung nach Relevanz&quot;
+Choosing a different sorting adjusts the order of the products accordingly.
+By sorting, the number of products in the button &quot;Produke anzeigen&quot; will not be adapted.</description>
+   <name>Sorting</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>528dcfcd-8b23-4073-8337-05cd5fd39dbf</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4e01bb42-4e6e-47bb-86dc-97382a47e69f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d1d8c6ca-d657-42ce-bfd4-90faf80cda1f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9150391a-7861-4117-a371-d4c561544098</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4e01bb42-4e6e-47bb-86dc-97382a47e69f</id>
+      <masked>false</masked>
+      <name>countryId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d1d8c6ca-d657-42ce-bfd4-90faf80cda1f</id>
+      <masked>false</masked>
+      <name>category</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9150391a-7861-4117-a371-d4c561544098</id>
+      <masked>false</masked>
+      <name>productNr</name>
+   </variable>
+</TestCaseEntity>

@@ -9,8 +9,12 @@
          <key>BASIC</key>
          <value>/html/body/main//div[@class='navigation-facet__filters slider-scroll swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-free-mode js_reach-beginning']</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//section[@class='navigation-facet col-12 js-navigation-facet js_is-sticky']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -18,6 +22,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html/body/main//div[@class='navigation-facet__filters slider-scroll swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-free-mode js_reach-beginning']</value>
-      <webElementGuid>71e3c5e1-edbc-4bb9-8609-f5effea755d9</webElementGuid>
+      <webElementGuid>c05cdbab-c300-4d23-bf31-42a17407533f</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

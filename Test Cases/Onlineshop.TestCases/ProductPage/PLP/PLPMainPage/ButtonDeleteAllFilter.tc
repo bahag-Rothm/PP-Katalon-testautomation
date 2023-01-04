@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Lightbox facet navigation opens.
+By selecting more than one filter the number of products in the button &quot;Produke anzeigen&quot; will be adapted.
+Status of the filters is shown in the filter bar.
+By clicking the button &quot;Alle Filter zurücksetzen&quot; all selected filters will be deslected.</description>
+   <name>ButtonDeleteAllFilter</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>939ace40-6e7b-4937-98f2-f8726e3a60b8</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>45b24e40-c06e-4d34-b717-da7d9d532d9d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>03d00807-3a79-4dbf-be62-9792bbd73274</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9fff01f7-e939-4b87-92df-9d0c164232a2</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>45b24e40-c06e-4d34-b717-da7d9d532d9d</id>
+      <masked>false</masked>
+      <name>countryId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>03d00807-3a79-4dbf-be62-9792bbd73274</id>
+      <masked>false</masked>
+      <name>category</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9fff01f7-e939-4b87-92df-9d0c164232a2</id>
+      <masked>false</masked>
+      <name>productNr</name>
+   </variable>
+</TestCaseEntity>

@@ -19,11 +19,17 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'onlineshop.Keywords.HomePageHelper.openBrowser'(countryId)
 
-CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.navigateToOverview'(countryId, category, productNr)
+CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.navigateToProducts'(countryId, countryLink, productNr)
 
-boolean result = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.checkproductImage'()
+boolean result = CustomKeywords.'onlineshop.Keywords.ProductTileHelper.checkproductImage'()
 
 assert result == true
+
+CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.setViewPortsizeToMobile'()
+
+boolean result2 = CustomKeywords.'onlineshop.Keywords.ProductTileHelper.checkproductImage'()
+
+assert result2 == true
 
 CustomKeywords.'onlineshop.Keywords.HomePageHelper.closeBrowser'()
 

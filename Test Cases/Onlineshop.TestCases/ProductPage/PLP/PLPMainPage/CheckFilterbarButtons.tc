@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Lightbox facet navigation opens.
+If one of the filters has been clicked, then this filter is expanded in the facet navigation.
+Button &quot;Produkte anzeigen&quot; shows number of products.</description>
+   <name>CheckFilterbarButtons</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>403cc4f6-ec99-44d7-b4aa-a79ea18621af</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3e9746af-2c68-413c-b489-eb4f6812d317</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>00b4ae5f-38eb-4c3b-b0d8-366d9ea27131</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>053ff9a5-1492-4522-8866-41f80c0c5518</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3e9746af-2c68-413c-b489-eb4f6812d317</id>
+      <masked>false</masked>
+      <name>countryId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>00b4ae5f-38eb-4c3b-b0d8-366d9ea27131</id>
+      <masked>false</masked>
+      <name>category</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>053ff9a5-1492-4522-8866-41f80c0c5518</id>
+      <masked>false</masked>
+      <name>productNr</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Open the product overview page for the subcategory &quot;Schrauben&quot; Link</description>
+   <name>ClickMehrProdukteAnzeigen</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e49d962e-afbe-4b37-b4fd-eb1087afd0a4</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Lightbox facet navigation opens.
+Brand filter is expanded and shows list of brands with numbers of products.
+By selecting/deselecting brands the link &quot;X Filter zurücksetzen&quot; appears and the number of products in the button &quot;Produke anzeigen&quot; will be adapted.
+Status of the filter is shown in the filter bar.
+By clicking the button &quot;X Filter zurücksetzen&quot; all selected brands will be deslected.</description>
+   <name>FilterCheckbox</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>91062344-b3fd-49cd-8ee9-eeb0d3826b16</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f1143f33-d325-466c-8988-3173f6a2fd6a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6376429b-e6b3-4680-958e-88751f50bf69</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8cc4a68a-b5ae-4765-8f97-fec78c7a2ea0</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f1143f33-d325-466c-8988-3173f6a2fd6a</id>
+      <masked>false</masked>
+      <name>countryId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6376429b-e6b3-4680-958e-88751f50bf69</id>
+      <masked>false</masked>
+      <name>category</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8cc4a68a-b5ae-4765-8f97-fec78c7a2ea0</id>
+      <masked>false</masked>
+      <name>productNr</name>
+   </variable>
+</TestCaseEntity>

@@ -7,5 +7,44 @@ Line 3: &lt;Attributes></description>
    <name>ProductName</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>299cd456-9900-4365-94b2-58310912e22f</testCaseGuid>
+   <testCaseGuid>d0546737-7b1d-4fde-83eb-53f017de370e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a012af14-c9a0-41a5-888e-d04c742d3fb4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f369d43e-3314-4515-9b71-aa34360dbafb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a5de7546-4ba4-43e5-934e-717061bd23dd</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a012af14-c9a0-41a5-888e-d04c742d3fb4</id>
+      <masked>false</masked>
+      <name>countryId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f369d43e-3314-4515-9b71-aa34360dbafb</id>
+      <masked>false</masked>
+      <name>countryLink</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a5de7546-4ba4-43e5-934e-717061bd23dd</id>
+      <masked>false</masked>
+      <name>productNr</name>
+   </variable>
 </TestCaseEntity>

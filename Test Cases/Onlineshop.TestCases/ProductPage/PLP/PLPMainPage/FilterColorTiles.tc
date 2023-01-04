@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Lightbox facet navigation opens.
+Base color filter is expanded and shows color tiles. Number of products is shown by mouse over.
+By selecting/deselecting colors the link &quot;X Filter zurücksetzen&quot; appears and the number of products in the button &quot;Produke anzeigen&quot; will be adapted.
+Status of the filter is shown in the filter bar.
+By clicking the button &quot;X Filter zurücksetzen&quot; all selected brands will be deslected.</description>
+   <name>FilterColorTiles</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fbb340d6-63ff-4055-9074-99e3a052e6fb</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>fa4ad597-f118-4d86-b572-ce5c42cbae94</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>221c48be-de92-4eb9-8e46-3aa51ddee30b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2822d389-1ead-4a47-8572-6ec1c7de0f8d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>fa4ad597-f118-4d86-b572-ce5c42cbae94</id>
+      <masked>false</masked>
+      <name>countryId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>221c48be-de92-4eb9-8e46-3aa51ddee30b</id>
+      <masked>false</masked>
+      <name>category</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2822d389-1ead-4a47-8572-6ec1c7de0f8d</id>
+      <masked>false</masked>
+      <name>productNr</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Online available: &quot;Online verfügbar&quot; (Green)
+Not online available: &quot;Online nicht verfügbar&quot; (Light grey)</description>
+   <name>CheckOnlineOrderable</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4b1e25ef-dad0-44f7-9975-cf46d417016f</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>092fe6b4-4a3b-4934-8636-9fa34e82a592</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a1eeed84-9ca1-4a56-832f-01242d19bebf</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e333e654-ad9b-419e-97a7-88b10a46b905</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>092fe6b4-4a3b-4934-8636-9fa34e82a592</id>
+      <masked>false</masked>
+      <name>countryId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a1eeed84-9ca1-4a56-832f-01242d19bebf</id>
+      <masked>false</masked>
+      <name>productNr</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e333e654-ad9b-419e-97a7-88b10a46b905</id>
+      <masked>false</masked>
+      <name>countryLink</name>
+   </variable>
+</TestCaseEntity>

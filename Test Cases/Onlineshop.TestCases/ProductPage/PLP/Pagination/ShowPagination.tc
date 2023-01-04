@@ -9,4 +9,43 @@ Pagination: 108 out of 999 products</description>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>90abafd9-8595-4da9-88ff-bb340c3b2699</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2b408bfa-1ea3-42fd-b4bc-42f0d08f5468</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c25e8ebf-fc1e-4c3e-93b9-a4ac1e6c572a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>999e5f86-b9ea-462a-92db-6aa4427c7dfe</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2b408bfa-1ea3-42fd-b4bc-42f0d08f5468</id>
+      <masked>false</masked>
+      <name>countryId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c25e8ebf-fc1e-4c3e-93b9-a4ac1e6c572a</id>
+      <masked>false</masked>
+      <name>category</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>999e5f86-b9ea-462a-92db-6aa4427c7dfe</id>
+      <masked>false</masked>
+      <name>productNr</name>
+   </variable>
 </TestCaseEntity>

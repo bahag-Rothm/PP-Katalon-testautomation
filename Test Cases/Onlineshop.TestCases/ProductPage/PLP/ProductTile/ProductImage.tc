@@ -35,7 +35,7 @@
       <description></description>
       <id>26097c25-bff0-41cf-a1dc-a945c4aa6b3f</id>
       <masked>false</masked>
-      <name>category</name>
+      <name>countryLink</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>

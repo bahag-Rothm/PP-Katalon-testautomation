@@ -6,15 +6,19 @@
    <elementGuidId>8f2c8d61-fe19-4a7b-8bec-5cdb9360995e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>html>body>main>div:nth-of-type(2)>div>nav>ol>li:nth-of-type(3)</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//li[@data-breadcrumb-name='Garten &amp; Freizeit']</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//li[@data-breadcrumb-id='10000910']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>html>body>main>div:nth-of-type(2)>div>nav>ol>li:nth-of-type(3)</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -22,6 +26,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//li[@data-breadcrumb-name='Garten &amp; Freizeit']</value>
-      <webElementGuid>211d33ab-2703-4d14-9531-75a193e5b84c</webElementGuid>
+      <webElementGuid>8ed01a26-c90b-4121-b501-bc4110416759</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

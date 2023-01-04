@@ -6,8 +6,8 @@
    <elementGuidId>743c916a-b84f-486f-a8cc-bf67ceb83fc3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div#main>section>div>button</value>
+         <key>BASIC</key>
+         <value>//*[@id = 'main/section/div/button']</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -17,8 +17,8 @@
          <key>IMAGE</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id = 'main/section/div/button']</value>
+         <key>CSS</key>
+         <value>div#main>section>div>button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
@@ -29,7 +29,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-primary btn-secondary</value>
-      <webElementGuid>20df073c-f243-4acc-a1f5-002506b561dc</webElementGuid>
+      <webElementGuid>dbd7ebf2-e4d8-4bb6-a8ae-68646a539c5b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,6 +37,6 @@
       <name>id</name>
       <type>Main</type>
       <value>main/section/div/button</value>
-      <webElementGuid>edf9adb8-f494-4563-80c8-c8681cf4ea53</webElementGuid>
+      <webElementGuid>17fa3406-80f5-466d-bfb8-4f587efcefb7</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

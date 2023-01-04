@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Viewport M&amp;L
+will be visible and clickable
+Viewport S
+will not be displayed</description>
+   <name>ButtonToTheTop</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8519041e-55f4-458f-a2c7-b4b0e98ab798</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>82a057ec-8b45-449a-8213-81ad4799de80</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8fc53bd7-55d7-472a-a562-79c385f5f9e5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e75fd438-56a4-4b78-9b08-a3afc7bfdbd9</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>82a057ec-8b45-449a-8213-81ad4799de80</id>
+      <masked>false</masked>
+      <name>countryId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8fc53bd7-55d7-472a-a562-79c385f5f9e5</id>
+      <masked>false</masked>
+      <name>category</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e75fd438-56a4-4b78-9b08-a3afc7bfdbd9</id>
+      <masked>false</masked>
+      <name>productNr</name>
+   </variable>
+</TestCaseEntity>

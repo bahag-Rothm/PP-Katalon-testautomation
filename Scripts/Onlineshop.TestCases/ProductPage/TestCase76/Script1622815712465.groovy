@@ -20,7 +20,7 @@ import org.openqa.selenium.Keys as Keys
 CustomKeywords.'onlineshop.Keywords.HomePageHelper.openBrowser'(COUNTRY)
 
 'Search for an item and display the results on the product overview page'
-WebUI.callTestCase(findTestCase('SharedSteps/Onlineshop/SetAndSelectSearchElement'), [('ITEMNUMBER') : ITEM], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('null'), [('ITEMNUMBER') : ITEM], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'onlineshop.Keywords.ComparisonPageHelper.selectCompareProductAddSearchSelect'()
 

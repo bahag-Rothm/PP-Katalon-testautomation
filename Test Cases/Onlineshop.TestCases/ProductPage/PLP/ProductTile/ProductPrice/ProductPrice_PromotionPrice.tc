@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Following prices and price components are shown if relevant:
+Price
+Strike price
+Promotion price
+Unit
+Base unit
+Scale price icon</description>
+   <name>ProductPrice_PromotionPrice</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a512e826-c0a6-49b8-9a7a-1916e9bec488</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c63bc2f1-fa55-4004-8b35-ea6b5d64597a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>89912c1a-3f1c-43eb-8608-2bc95a7e292f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8af8f722-8b5c-4330-9bb8-29c40edf6764</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c63bc2f1-fa55-4004-8b35-ea6b5d64597a</id>
+      <masked>false</masked>
+      <name>countryId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>89912c1a-3f1c-43eb-8608-2bc95a7e292f</id>
+      <masked>false</masked>
+      <name>productNr</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8af8f722-8b5c-4330-9bb8-29c40edf6764</id>
+      <masked>false</masked>
+      <name>countryLink</name>
+   </variable>
+</TestCaseEntity>

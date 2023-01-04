@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Product is added to comparison. Link changes from &quot;Vergleichen&quot; to &quot;Zum Vergleich&quot; 
+Product is added to bookmark list Link changes from &quot;Merken&quot; to &quot;Zur Merkliste&quot; 
+In both cases the lightboxes for comparison and bookmark are animatet if the first product is added.
+Icons appear on the right for the &quot;Merkliste&quot; and the &quot;Vergleichen&quot;
+Viewport S
+Elements are not shown</description>
+   <name>CheckBookmark</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2236f321-d07a-4fab-b58f-1d95718f9ef3</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ae082e4c-f703-445a-af16-709dfa03956b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bae1ca1f-5a0e-41bd-b058-860e8f00fd16</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>31dd6060-010f-4338-b66a-c43306f1ad1a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ae082e4c-f703-445a-af16-709dfa03956b</id>
+      <masked>false</masked>
+      <name>countryId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bae1ca1f-5a0e-41bd-b058-860e8f00fd16</id>
+      <masked>false</masked>
+      <name>countryLink</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>31dd6060-010f-4338-b66a-c43306f1ad1a</id>
+      <masked>false</masked>
+      <name>productNr</name>
+   </variable>
+</TestCaseEntity>

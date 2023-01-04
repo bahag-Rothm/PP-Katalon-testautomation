@@ -6,11 +6,15 @@
    <elementGuidId>32cad9ef-cf14-48f8-8651-2b385a1694a4</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//a[@class='product-list-tile__image']</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -18,6 +22,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//img[@src='https://media.bahag.cloud/m/746470/15.jpg']</value>
-      <webElementGuid>89831e27-20d1-4093-8c7e-8f392e16942c</webElementGuid>
+      <webElementGuid>3f034c95-071b-4411-a95c-181eddeb65e8</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

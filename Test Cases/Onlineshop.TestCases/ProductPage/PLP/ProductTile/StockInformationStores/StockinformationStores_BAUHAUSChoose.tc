@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Store not selected: &quot;BAUHAUS wählen&quot; (light grey)
+In store available and reservable: &quot;In &lt;Store name> reservierbar&quot; (Green)
+In store available and not reservable: &quot;In &lt;Store name> verfügbar&quot; (Green)
+In store not available and online not available: &quot;In &lt;Store name> nicht verfügbar&quot; (Light grey)
+In store not available and online vailable: &quot;In &lt;Store name> bestellbar&quot; (Orange)</description>
+   <name>StockinformationStores_BAUHAUSChoose</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5225e5bf-0e05-4a9c-b744-a28b3388884a</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>31996022-b047-45c1-86bc-6886f8cc8cdc</id>
+      <masked>false</masked>
+      <name>countryId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>864dd1f8-c5d3-4463-a061-9bcac2214164</id>
+      <masked>false</masked>
+      <name>productNr</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>72997e74-b646-4fe3-b307-c525f5403324</id>
+      <masked>false</masked>
+      <name>countryLink</name>
+   </variable>
+</TestCaseEntity>

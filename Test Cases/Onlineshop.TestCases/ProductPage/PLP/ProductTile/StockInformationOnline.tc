@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Online available: &quot;Online verfügbar&quot; (Green)
-Not online available: &quot;Online nicht verfügbar&quot; (Light grey)</description>
-   <name>StockInformationOnline</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>a478e5a6-7622-40ae-8972-9a8628ebd278</testCaseGuid>
-</TestCaseEntity>

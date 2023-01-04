@@ -54,10 +54,28 @@ class HomePageHelper {
 	def openBrowser(String countryId) {
 		String link = GlobalHelper.getMapperByCountryId(countryId, "link");
 		WebUI.openBrowser(link);
-		//WebUI.maximizeWindow();
 		acceptCookies(countryId);
-		closePupup();  				// New -> for QS
+		closePopup();
 	}
+
+	@Keyword
+	def chooseBAUHAUS(String shopName) {
+
+
+		KeywordUtil.logInfo("Choose BAUHAUS");
+
+		WebUI.click(findTestObject('Onlineshop.Pages/HomePage/Elements/ButtonBAUHAUSChoose'))
+		KeywordUtil.logInfo("ButtonBAUHAUSChoose has been clicked");
+
+		WebUI.setText(findTestObject('Onlineshop.Pages/HomePage/Elements/TextfieldBAUHAUSChoose'), shopName)
+
+		WebUI.click(findTestObject('Onlineshop.Pages/HomePage/Elements/ButtonSearchBAUHAUS'))
+		KeywordUtil.logInfo("ButtonSearchBAUHAUS has been clicked");
+
+		WebUI.click(findTestObject('Onlineshop.Pages/HomePage/Elements/ButtonBAUHAUSAuswählen'))
+		KeywordUtil.logInfo("ButtonBAUHAUSAuswählen has been clicked");
+	}
+
 
 	@Keyword
 	def closeBrowser() {
@@ -132,6 +150,20 @@ class HomePageHelper {
 		return flag;
 	}
 
+	// Close the Popup for the NL site
+	@Keyword
+	def closeNLPopup() {
+
+		String popup = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/HomePage/Elements/NLPopUP'),3, FailureHandling.OPTIONAL);
+		if(popup == 'true') {
+			WebUI.click(findTestObject('Onlineshop.Pages/HomePage/Elements/NLPopUP'))
+			return true
+		}else {
+			return true
+		}
+		return true
+	}
+
 	// Private
 	def getMenuElementsCount() {
 		WebElement web = WebUI.findWebElement(findTestObject('Onlineshop.Pages/HomePage/Elements/NavigationElements'));
@@ -169,7 +201,7 @@ class HomePageHelper {
 		}
 	}
 
-	def closePupup() {
+	def closePopup() {
 		List<WebElement> listOfBtnpopup = WebUiCommonHelper.findWebElements(findTestObject('Onlineshop.Pages/HomePage/Elements/ButtonPopupClose'), 2)
 		int  size  = listOfBtnpopup.size()
 

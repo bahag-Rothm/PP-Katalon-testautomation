@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>More products will be loaded
+PDP is shown
+When jumping to a PDP and jumping back to the PLP, 108 products are displayed in the list.
+The product that was jumped back from is in focus.
+Pagination: 108 out of 999 products</description>
+   <name>JumpOnTheThirdBlock</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c8956ab7-3a70-4ff0-a841-233a6ba265ba</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2a0f2592-71b6-48e6-aa5c-1c37ccafed43</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7306f787-b9d5-44a9-a79b-1af46f09cccb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bba0c588-d4f7-4652-abf8-4f7675fb294f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2a0f2592-71b6-48e6-aa5c-1c37ccafed43</id>
+      <masked>false</masked>
+      <name>countryId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7306f787-b9d5-44a9-a79b-1af46f09cccb</id>
+      <masked>false</masked>
+      <name>category</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bba0c588-d4f7-4652-abf8-4f7675fb294f</id>
+      <masked>false</masked>
+      <name>productNr</name>
+   </variable>
+</TestCaseEntity>

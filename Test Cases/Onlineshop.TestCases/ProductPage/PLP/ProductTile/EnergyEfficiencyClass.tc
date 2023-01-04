@@ -4,5 +4,44 @@
    <name>EnergyEfficiencyClass</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>13a043d0-921b-4d80-9045-4c1ca9293edc</testCaseGuid>
+   <testCaseGuid>1d02148d-7831-49ac-a36e-4492963de434</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>038d6b15-2849-40c0-ba1e-2432ac4a8f25</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ffb187b1-6090-41f1-a20c-43f49615bda4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e22d47da-7170-4da5-a7ee-76bc51134ca7</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>038d6b15-2849-40c0-ba1e-2432ac4a8f25</id>
+      <masked>false</masked>
+      <name>countryId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ffb187b1-6090-41f1-a20c-43f49615bda4</id>
+      <masked>false</masked>
+      <name>productNr</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e22d47da-7170-4da5-a7ee-76bc51134ca7</id>
+      <masked>false</masked>
+      <name>countryLink</name>
+   </variable>
 </TestCaseEntity>

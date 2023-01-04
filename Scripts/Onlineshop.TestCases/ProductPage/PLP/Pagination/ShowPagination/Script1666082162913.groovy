@@ -17,3 +17,37 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+CustomKeywords.'onlineshop.Keywords.HomePageHelper.openBrowser'(countryId)
+
+CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.navigateToOverview'(countryId, category, productNr)
+
+WebUI.callTestCase(findTestCase('Onlineshop.TestCases/SharedFolder/ClickMehrProdukteAnzeigen'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Onlineshop.TestCases/SharedFolder/ClickMehrProdukteAnzeigen'), [:], FailureHandling.STOP_ON_FAILURE)
+
+
+boolean result = CustomKeywords.'onlineshop.Keywords.PaginationHelper.showPagination'()
+
+assert result == true
+
+boolean result2 = CustomKeywords.'onlineshop.Keywords.PaginationHelper.clickProductInTheFirstBlock'()
+assert result2 == true
+WebUI.back()
+
+boolean result3 = CustomKeywords.'onlineshop.Keywords.PaginationHelper.verifyProductPresent'()
+assert result3 == true
+CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.setViewPortsizeToMobile'()
+
+boolean result4 = CustomKeywords.'onlineshop.Keywords.PaginationHelper.showPagination'()
+
+assert result4 == true
+
+boolean result5 = CustomKeywords.'onlineshop.Keywords.PaginationHelper.clickProductInTheFirstBlock'()
+assert result5 == true
+WebUI.back()
+
+boolean result6 = CustomKeywords.'onlineshop.Keywords.PaginationHelper.verifyProductPresent'()
+assert result6 == true
+
+CustomKeywords.'onlineshop.Keywords.HomePageHelper.closeBrowser'()
+

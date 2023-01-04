@@ -15,7 +15,7 @@
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Onlineshop.TestSuites/PLP/PLPTestSuite</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Collection/PLP/PLPTestSuite</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -25,7 +25,7 @@
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Onlineshop.TestSuites/PLP/ProductTileSuite</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Collection/PLP/ProductTileSuite</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>

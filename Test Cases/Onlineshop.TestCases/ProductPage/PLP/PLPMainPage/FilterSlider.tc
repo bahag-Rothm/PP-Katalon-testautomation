@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Lightbox facet navigation opens.
+Price filter is expanded and shows range of prices.
+By adapting the slider positions, the values in the input fields below are adapted accordingly, the link &quot;X Filter zurücksetzen&quot; appears and the number of products in the button &quot;Produke anzeigen&quot; will be adapted.
+Status of the filter is shown in the filter bar.
+By clicking the button &quot;X Filter zurücksetzen&quot; the slider position and the input fields are showing the intial range.</description>
+   <name>FilterSlider</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>31a51ab0-e001-43fb-9bc7-614df3d81c4e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d8fa2ace-055f-459b-b0d9-5a49ee72c431</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>62cf2f5f-2f02-4e6c-a399-c1825ad1b021</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>734c68f1-ec67-4260-a321-026be8e3fef9</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d8fa2ace-055f-459b-b0d9-5a49ee72c431</id>
+      <masked>false</masked>
+      <name>countryId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>62cf2f5f-2f02-4e6c-a399-c1825ad1b021</id>
+      <masked>false</masked>
+      <name>category</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>734c68f1-ec67-4260-a321-026be8e3fef9</id>
+      <masked>false</masked>
+      <name>productNr</name>
+   </variable>
+</TestCaseEntity>

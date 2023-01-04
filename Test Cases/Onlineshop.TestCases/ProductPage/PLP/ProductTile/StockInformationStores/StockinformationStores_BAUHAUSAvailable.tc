@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Store not selected: &quot;BAUHAUS wählen&quot; (light grey)
+In store available and reservable: &quot;In &lt;Store name> reservierbar&quot; (Green)
+In store available and not reservable: &quot;In &lt;Store name> verfügbar&quot; (Green)
+In store not available and online not available: &quot;In &lt;Store name> nicht verfügbar&quot; (Light grey)
+In store not available and online vailable: &quot;In &lt;Store name> bestellbar&quot; (Orange)</description>
+   <name>StockinformationStores_BAUHAUSAvailable</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>892c4d81-8dc1-42b4-89fb-fc31facbad88</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>831af3bc-8a61-4cab-8368-82ae9c5fb740</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9c20f1e2-8483-4a62-8097-854407a52b2b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>92ef9924-bee9-40d1-aeb4-e59c36510f9b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bca18d27-2363-4416-9fd8-f10e2a4e8de7</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>831af3bc-8a61-4cab-8368-82ae9c5fb740</id>
+      <masked>false</masked>
+      <name>countryId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9c20f1e2-8483-4a62-8097-854407a52b2b</id>
+      <masked>false</masked>
+      <name>productNr</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>92ef9924-bee9-40d1-aeb4-e59c36510f9b</id>
+      <masked>false</masked>
+      <name>countryLink</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bca18d27-2363-4416-9fd8-f10e2a4e8de7</id>
+      <masked>false</masked>
+      <name>shopName</name>
+   </variable>
+</TestCaseEntity>
