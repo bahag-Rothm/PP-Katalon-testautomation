@@ -111,13 +111,8 @@ public class ProductTileHelper {
 
 
 		String primary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Primary'), 3, FailureHandling.OPTIONAL)
-
-
 		String secondary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Secondary'),3, FailureHandling.OPTIONAL)
-
-
 		String third = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Third'),3, FailureHandling.OPTIONAL)
-
 
 		if(primary == "true" || secondary == "true" || third == "true" ) {
 
@@ -458,8 +453,6 @@ public class ProductTileHelper {
 
 		String checkText = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSCheckText'), FailureHandling.OPTIONAL)
 
-
-		//checkText.contains("reservable")
 		KeywordUtil.logInfo(checkText);
 		KeywordUtil.logInfo(resultReservable);
 		KeywordUtil.logInfo(resultavailable);
@@ -514,8 +507,6 @@ public class ProductTileHelper {
 
 		String checkText = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSCheckText'), FailureHandling.OPTIONAL)
 
-
-		//checkText.contains("reservable")
 		KeywordUtil.logInfo(checkText);
 		KeywordUtil.logInfo(resultReservable);
 		KeywordUtil.logInfo(resultavailable);
@@ -646,7 +637,7 @@ public class ProductTileHelper {
 		String notAavailableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/OnlineStatus/OnlineNotAvailable'))
 		String notAvailableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/OnlineStatus/OnlineNotAvailable'))
 
-		if( availableWidth <= tilewidth && AvailableHeight <= tileheight) {
+		if( notAavailableWidth <= tilewidth && notAvailableHeight <= tileheight) {
 
 			if(notAvailable == "true") {
 				if(resultnotAvailable == "Niet online bestelbaar" || resultnotAvailable == "Online nicht verfügbar" || resultnotAvailable == "Online nicht verfügbar") {
