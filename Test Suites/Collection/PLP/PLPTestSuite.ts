@@ -320,7 +320,7 @@
    <testCaseLink>
       <guid>e094f707-561c-42fc-810e-3cba80307197</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/PLPMainPage/ButtonToTheTop</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>

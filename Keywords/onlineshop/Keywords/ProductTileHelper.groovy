@@ -49,14 +49,21 @@ import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 public class ProductTileHelper {
-	
+
 	//basic producttile width
 	String tilewidth = 550;
-	
+
 	//basic producttile height
 	String tileheight = 320;
 
-	//Checks if the product image is the right size and visible 
+	//basic icon width
+	String iconwidth = 50;
+
+	//basic icon height
+	String iconheight = 50;
+
+
+	//Checks if the product image is the right size and visible
 	@Keyword
 	def checkproductImage() {
 		String flag = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductImage'), 3)
@@ -361,7 +368,7 @@ public class ProductTileHelper {
 
 
 	}
-	
+
 	//Checks if the product name is the right size and visible
 	@Keyword
 	def checkProductName() {
@@ -385,7 +392,7 @@ public class ProductTileHelper {
 			return false
 		}
 	}
-	
+
 	//Checks if the product brand is the right size and visible
 	@Keyword
 	def checkProductBrand() {
@@ -663,7 +670,7 @@ public class ProductTileHelper {
 		}
 
 	}
-	
+
 	//Checks if the product energy efficiency class is the right size and visible
 	@Keyword
 	def checkEnergyEfficiencyClass() {
@@ -695,7 +702,7 @@ public class ProductTileHelper {
 			return false
 		}
 	}
-		
+
 	//Checks if the BAUHAUS choose box is the right size and visible
 	@Keyword
 	def checkBAUHAUSChoose() {
@@ -725,8 +732,8 @@ public class ProductTileHelper {
 			return false
 		}
 	}
-	
-	
+
+
 	//Checks if the BAUHAUS choose box is the right size and visible
 	@Keyword
 	def checkComparisonIcon() {
@@ -743,19 +750,33 @@ public class ProductTileHelper {
 				if(resultComparison == "Vergleichen" || resultComparison == "Vergelijken" || resultComparison == "Comparar" || resultComparison == "Usporedi") {
 					KeywordUtil.logInfo("Comparison button exist and the text is right");
 					WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ComparisonIcon/ProductComparisonButton'))
-					WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/Sidebar/CloseSideBar'))
-					String comparisonpage = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ComparisonIcon/goToComparisonButton'), 3, FailureHandling.OPTIONAL)
-					if(comparisonpage == "true") {
-						String resultComparisonpage = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ComparisonIcon/goToComparisonButton'), FailureHandling.OPTIONAL)
-						KeywordUtil.logInfo(resultComparisonpage);
-						if(resultComparisonpage == "Zum Vergleich" || resultComparisonpage == "Naar vergelijk" || resultComparisonpage == "A comparación" || resultComparisonpage == "Pogledaj usporedbu") {
-							String comparisonIcon = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ComparisonIcon/Comparison'), 3, FailureHandling.OPTIONAL)
-							if(comparisonIcon == "true") {
-								KeywordUtil.logInfo("To comparison page button exist, the text is right and the comparison Icon exists");
+					WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/CloseSideBar'))
+				}
+				String comparisonpage = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ComparisonIcon/goToComparisonButton'), 3, FailureHandling.OPTIONAL)
+				if(comparisonpage == "true") {
+					String resultComparisonpage = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ComparisonIcon/goToComparisonButton'), FailureHandling.OPTIONAL)
+					KeywordUtil.logInfo(resultComparisonpage);
+					if(resultComparisonpage == "Zum Vergleich" || resultComparisonpage == "Naar vergelijk" || resultComparisonpage == "A comparación" || resultComparisonpage == "Pogledaj usporedbu") {
+						String comparisonIcon = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/ComparisonIcon'), 3, FailureHandling.OPTIONAL)
+						String comparisonIconWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/ComparisonIcon'))
+						String comparisonIconHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/ComparisonIcon'))
+
+						KeywordUtil.logInfo(comparisonIcon);
+						KeywordUtil.logInfo(comparisonIconWidth);
+						KeywordUtil.logInfo(comparisonIconHeight);
+						KeywordUtil.logInfo(iconwidth);
+						KeywordUtil.logInfo(iconheight);
+
+						if( iconwidth <= comparisonIconWidth && iconheight <= comparisonIconHeight) {
+							KeywordUtil.logInfo(comparisonIcon);
+							if(comparisonIcon == 'true') {
+								WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/ComparisonIcon'))
+								KeywordUtil.logInfo('Sidebar opened');
 								return true
+							}else {
+								KeywordUtil.logInfo('Sidebar did not open');
+								return false
 							}
-							KeywordUtil.logInfo("To comparison page button exist and the text is right, but the comparison Icon dosen't exists");
-							return false
 						}else {
 							KeywordUtil.logInfo("Comparison button exist but the Text isn't right");
 							return false
@@ -789,21 +810,31 @@ public class ProductTileHelper {
 		KeywordUtil.logInfo(bookmarkHeight);
 		KeywordUtil.logInfo(tileheight);
 		if( bookmarkWidth <= tilewidth && bookmarkHeight <= tileheight) {
-
 			if(bookmark == "true" ) {
 				if(resultBookmark == "Označi" || resultBookmark == "Merken" || resultBookmark == "Op verlanglijstje" || resultBookmark == "Favoritos") {
 					KeywordUtil.logInfo("Bookmark button exist and the text is right");
-					WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BookmarkIcon/ProductWatchlistButton'))
-					WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/Sidebar/CloseSideBar'))
-					String resultBookmarkpage = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BookmarkIcon/goToWatchlistButton'), FailureHandling.OPTIONAL)
-					if(resultBookmarkpage == "Nastavi na popis" || resultBookmarkpage == "Zur Merkliste" || resultBookmarkpage == "Naar verlanglijstje" || resultBookmarkpage == "Mis favoritos") {
-						String bookmarkIcon = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BookmarkIcon/Watchlist'), 3, FailureHandling.OPTIONAL)
-						if(bookmarkIcon == "true") {
-							KeywordUtil.logInfo("To comparison page button exist, the text is right and the bookmark icon exists");
+
+					WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BookmarkIcon/ProductWatchlistButton')) 
+					WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/CloseSideBar'))
+				}
+				String resultBookmarkpage = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BookmarkIcon/goToWatchlistButton'), FailureHandling.OPTIONAL)
+				KeywordUtil.logInfo(resultBookmarkpage);
+				if(resultBookmarkpage == "Nastavi na popis" || resultBookmarkpage == "Zur Merkliste" || resultBookmarkpage == "Naar verlanglijstje" || resultBookmarkpage == "Mis favoritos") {
+					String watchlistIcon = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/WatchlistIcon'), 3, FailureHandling.OPTIONAL)
+					String watchlistIconWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/WatchlistIcon'))
+					String watchlistIconHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/WatchlistIcon'))
+
+					if( iconwidth <= watchlistIconWidth && iconheight <= watchlistIconHeight) {
+						KeywordUtil.logInfo(watchlistIcon + 'true');
+						if(watchlistIcon == 'true') {
+							WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/WatchlistIcon'))
+							KeywordUtil.logInfo('Sidebar opened');
+
 							return true
+						}else {
+							KeywordUtil.logInfo('Sidebar did not open');
+							return false
 						}
-						KeywordUtil.logInfo("To bookmark page button exist and the text is right, but the bookmark icon dosen't exists");
-						return false
 					}
 				}else {
 					KeywordUtil.logInfo("Bookmark button exist but the Text isn't right");
@@ -816,7 +847,7 @@ public class ProductTileHelper {
 			}
 		}
 		else {
-			KeywordUtil.logInfo("Bookmark button dosen't exist or the CSS isn't write");
+			KeywordUtil.logInfo("Bookmark button dosen't exist or the CSS isn't right");
 			return false
 		}
 

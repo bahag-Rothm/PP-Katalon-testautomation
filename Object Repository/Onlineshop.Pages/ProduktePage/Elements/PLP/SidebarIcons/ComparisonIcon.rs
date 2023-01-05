@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>CloseIconSidebar</name>
+   <name>ComparisonIcon</name>
    <tag></tag>
-   <elementGuidId>c6cba718-a67e-40ab-9ace-669371553e49</elementGuidId>
+   <elementGuidId>17b4b9b7-7da8-42f4-b81d-9661ad6b991c</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id=&quot;js_off-canvas-toggle-compare&quot;]</value>
+      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//div[@class='backdrop fade js_overlay-header show']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

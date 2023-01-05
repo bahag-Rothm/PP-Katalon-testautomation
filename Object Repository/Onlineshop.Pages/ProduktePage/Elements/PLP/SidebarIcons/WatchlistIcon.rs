@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Comparison</name>
+   <name>WatchlistIcon</name>
    <tag></tag>
-   <elementGuidId>3415ba8a-c86b-46c0-9cf7-b9aa7e193c77</elementGuidId>
+   <elementGuidId>b5f39331-8fb7-46b5-b2ab-3a7d180aa329</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//button[@id=&quot;js_off-canvas-toggle-watchlist&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='js_off-canvas-toggle-compare']</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

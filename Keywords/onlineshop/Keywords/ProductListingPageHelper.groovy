@@ -50,6 +50,12 @@ import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 
 public class ProductListingPageHelper {
+    
+    //basic icon width
+    String iconwidth = 50;
+    
+    //basic icon height
+    String iconheight = 50;
 
     //Change view to Mobile view
     @Keyword
@@ -472,19 +478,23 @@ public class ProductListingPageHelper {
     def toTheTopIcon() {
 
         //Insert Object
-        String toTheTop = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/Sidebar/ToTheTop'),3)
-        KeywordUtil.logInfo(toTheTop);
-        if(toTheTop == "true") {
-            String toTheTopbutton = WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/Sidebar/ToTheTop'))
-            KeywordUtil.logInfo("To the top icon works");
-            return true
-        }
-        else {
-            KeywordUtil.logInfo("To the top icon dosen't work");
-            return false
+        String toTheTop = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/ToTheTop'),3)
+        String toTheTopIconWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/ToTheTop'))
+        String toTheTopIconHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/ToTheTop'))
+    
+        if( iconwidth <= toTheTopIconWidth && iconheight <= toTheTopIconHeight) {
+            KeywordUtil.logInfo(toTheTop);
+            if(toTheTop == "true") {
+                String toTheTopbutton = WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/ToTheTop'))
+                KeywordUtil.logInfo("To the top icon works");
+                return true
+            }
+            else {
+                KeywordUtil.logInfo("To the top icon dosen't work");
+                return false
+            }
         }
     }
-
     //clicks minimum price button
     @Keyword
     def clickMinPriceTextBox() {
@@ -640,9 +650,9 @@ public class ProductListingPageHelper {
     @Keyword
     def closeSideBar() {
 
-        String closeSidebar = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/Sidebar/CloseIconSidebar'), 5)
+        String closeSidebar = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/CloseSideBar'), 5)
 
-        String close = WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/Sidebar/CloseIconSidebar'))
+        String close = WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/CloseSideBar'))
 
         if(closeSidebar == "true") {
             KeywordUtil.logInfo("Brand button exist");

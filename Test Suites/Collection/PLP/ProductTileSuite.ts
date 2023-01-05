@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>1cc384de-c6c4-4c30-8740-1921de52b73d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/ProductTile/Teaser</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -55,7 +55,7 @@
    <testCaseLink>
       <guid>bc6fa6c9-7853-48f4-8300-66099c8b9e49</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/ProductTile/CheckComparison</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -89,7 +89,7 @@
    <testCaseLink>
       <guid>766e7a93-58d9-4ced-9fd6-122a7fa47e5c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <iterationNameVariable>
          <defaultValue>''</defaultValue>
          <description></description>
@@ -130,7 +130,7 @@
    <testCaseLink>
       <guid>1e2e3edc-28ef-42b7-a49d-1b2959d7c880</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/ProductTile/ProductName</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -164,7 +164,7 @@
    <testCaseLink>
       <guid>efcdfeff-8103-4478-b44a-76cb4c1665b3</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/ProductTile/ProductIcons/ProductIcon_set</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -198,7 +198,7 @@
    <testCaseLink>
       <guid>abdd01a3-4fe6-4fee-b1ab-809c202a26bc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/ProductTile/ProductIcons/ProductIcon_advertising</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -232,7 +232,7 @@
    <testCaseLink>
       <guid>b42290b3-7311-4c4e-afd7-9042a510b0b3</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/ProductTile/ProductIcons/ProductIcon_guarantee</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -266,7 +266,7 @@
    <testCaseLink>
       <guid>758a9c60-12b9-47c5-98fc-55e8d5ba7dfc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/ProductTile/ProductIcons/ProductIcon_new</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -300,7 +300,7 @@
    <testCaseLink>
       <guid>06b98254-76a5-4fd1-99d2-f24c3ef7ec5e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/ProductTile/ProductIcons/ProductIcon_recommendation</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -334,7 +334,7 @@
    <testCaseLink>
       <guid>8747f848-0050-4556-857e-af6e49f28b75</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/ProductTile/Variants</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -368,7 +368,7 @@
    <testCaseLink>
       <guid>15a4a6f6-48e5-435a-82b0-952b6cf164b4</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/ProductTile/EnergyEfficiencyClass</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -402,7 +402,7 @@
    <testCaseLink>
       <guid>cccdd3db-ff7f-460d-8a72-5a9d98f12b5a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/ProductTile/CheckOnlineOrderable/CheckOnlineOrderable</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -436,7 +436,7 @@
    <testCaseLink>
       <guid>06c52e74-6f99-4c33-b22e-2a35926dedb3</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/ProductTile/CheckOnlineOrderable/CheckOnlineNotOrderable</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -470,7 +470,7 @@
    <testCaseLink>
       <guid>bc4bda8a-2231-4998-a0f0-cb01fddcd71b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/ProductTile/StockInformationStores/StockinformationStores_BAUHAUSAvailable</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -510,7 +510,7 @@
    <testCaseLink>
       <guid>74107a73-2fed-4f25-a9d6-70cc66cbed3b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/ProductTile/StockInformationStores/StockinformationStores_BAUHAUSChoose</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -544,7 +544,7 @@
    <testCaseLink>
       <guid>4158eb0e-88a8-474d-94a6-0c3a1624fd7c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/ProductTile/StockInformationStores/StockinformationStores_BAUHAUSNotAvailable</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -584,7 +584,7 @@
    <testCaseLink>
       <guid>704df2e2-116e-4f6c-8f89-4556f17f34d0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/ProductTile/StockInformationStores/StockinformationStores_BAUHAUSReservable</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>

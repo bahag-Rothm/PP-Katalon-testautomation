@@ -49,22 +49,32 @@ import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 public class PaginationHelper {
 
+	//basic icon width
+	String iconwidth = 50;
+
+	//basic icon height
+	String iconheight = 50;
 
 	//Checks if the last seen icon is visible
 	@Keyword
 	def lastSeenPage() {
-		String lastSeenIcon = WebUI.verifyElementInViewport(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/Sidebar/LastSeen'), 3, FailureHandling.OPTIONAL)
-		KeywordUtil.logInfo(lastSeenIcon);
-		if(lastSeenIcon == 'true') {
-			//click last seen Icon
-			WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/Sidebar/LastSeen'))
-			KeywordUtil.logInfo('Sidebar opened');
-			WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/Sidebar/CloseIconSideBar'))
-			KeywordUtil.logInfo('Sidebar closed');
-			return true
-		}else {
-			KeywordUtil.logInfo('Sidebar did not open');
-			return false
+		String lastSeenIcon = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/LastSeen'), 3, FailureHandling.OPTIONAL)
+		String lastSeenIconWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/LastSeen'))
+		String lastSeenIconHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/LastSeen'))
+
+		if( iconwidth <= lastSeenIconWidth && iconheight <= lastSeenIconHeight) {
+			KeywordUtil.logInfo(lastSeenIcon);
+			if(lastSeenIcon == 'true') {
+				//click last seen Icon
+				WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/LastSeen'))
+				KeywordUtil.logInfo('Sidebar opened');
+				WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/CloseIconSideBar'))
+				KeywordUtil.logInfo('Sidebar closed');
+				return true
+			}else {
+				KeywordUtil.logInfo('Sidebar did not open');
+				return false
+			}
 		}
 	}
 
@@ -84,7 +94,7 @@ public class PaginationHelper {
 			return false
 		}
 	}
-	
+
 	//clicks on a product in the first block
 	@Keyword
 	def clickProductInTheFirstBlock() {
@@ -123,7 +133,7 @@ public class PaginationHelper {
 
 
 	}
-	
+
 	//checks the text from the load previous button
 	@Keyword
 	def checkLoadPreviousProduct() {
@@ -138,7 +148,7 @@ public class PaginationHelper {
 
 
 	}
-	
+
 	//clicks on a product in the fourth block
 	@Keyword
 	def clickProductInTheFourthBlock() {
@@ -185,6 +195,8 @@ public class PaginationHelper {
 			return true
 		}
 	}
+
+
 
 
 
