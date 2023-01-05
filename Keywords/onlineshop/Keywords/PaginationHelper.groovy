@@ -50,6 +50,7 @@ import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 public class PaginationHelper {
 
 
+	//Checks if the last seen icon is visible
 	@Keyword
 	def lastSeenPage() {
 		String lastSeenIcon = WebUI.verifyElementInViewport(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/Sidebar/LastSeen'), 3, FailureHandling.OPTIONAL)
@@ -67,11 +68,12 @@ public class PaginationHelper {
 		}
 	}
 
+	//Checks if the right number is shown
 	@Keyword
 	def showPagination() {
 		String numES = 104;
 		String num = 108;
-		String paginationNum = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/NumberOfShownProducts'), FailureHandling.OPTIONAL)
+		String paginationNum = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/Pagination/NumberOfShownProducts'), FailureHandling.OPTIONAL)
 		KeywordUtil.logInfo(num);
 		KeywordUtil.logInfo(paginationNum);
 		if(paginationNum == num || paginationNum == numES) {
@@ -82,6 +84,8 @@ public class PaginationHelper {
 			return false
 		}
 	}
+	
+	//clicks on a product in the first block
 	@Keyword
 	def clickProductInTheFirstBlock() {
 
@@ -93,6 +97,7 @@ public class PaginationHelper {
 		}
 	}
 
+	//clicks on a product in the third block
 	@Keyword
 	def clickProductInTheThirdBlock() {
 
@@ -104,9 +109,10 @@ public class PaginationHelper {
 		}
 	}
 
+	//checks the text from the load more button
 	@Keyword
 	def checkLoadMoreProducts() {
-		//First it is the "load more Products" button, after the second call it it the "see previous products button"
+		//First it is the "load more Products" button, after the second call it is the "see previous products button"
 		String button = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/Test'),FailureHandling.OPTIONAL)
 		KeywordUtil.logInfo(button);
 		if(button.contains("Mehr Produkte anzeigen")|| button.contains("Mostrar más productos") || button.contains("Bekijk meer producten") || button.contains("Prikaži više proizvoda") ) {
@@ -117,7 +123,8 @@ public class PaginationHelper {
 
 
 	}
-
+	
+	//checks the text from the load previous button
 	@Keyword
 	def checkLoadPreviousProduct() {
 		//First it is the "load more Products" button, after the second call it it the "see previous products button"
@@ -131,7 +138,8 @@ public class PaginationHelper {
 
 
 	}
-
+	
+	//clicks on a product in the fourth block
 	@Keyword
 	def clickProductInTheFourthBlock() {
 
@@ -142,6 +150,7 @@ public class PaginationHelper {
 			return true
 		}
 	}
+	//checks if a product is still present
 	@Keyword
 	def verifyProductPresent() {
 
@@ -153,6 +162,7 @@ public class PaginationHelper {
 		}
 	}
 
+	//checks if a product is still present in the third block
 	@Keyword
 	def verifyProductPresentThirdBlock() {
 
@@ -164,7 +174,7 @@ public class PaginationHelper {
 		}
 	}
 
-
+	//checks if a product is still present in the fourth block
 	@Keyword
 	def verifyProductPresentFourth() {
 

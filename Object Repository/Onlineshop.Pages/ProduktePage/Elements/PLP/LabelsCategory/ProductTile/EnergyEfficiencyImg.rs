@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ProductIcon_Variants_Number</name>
+   <name>EnergyEfficiencyImg</name>
    <tag></tag>
-   <elementGuidId>3938454f-d0c8-4e66-aef4-e5cb3f70c1ff</elementGuidId>
+   <elementGuidId>2f2c0c30-253b-40f6-9c09-82a70d7a9c4e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//span[@class='product-list-tile__variant__count']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@class='modal fade bh-modal--auto-width show']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

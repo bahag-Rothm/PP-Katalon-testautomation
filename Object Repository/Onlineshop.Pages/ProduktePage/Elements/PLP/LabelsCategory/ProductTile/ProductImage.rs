@@ -6,12 +6,11 @@
    <elementGuidId>32cad9ef-cf14-48f8-8651-2b385a1694a4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@class='product-list-tile__image']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//a[@class='product-list-tile__image']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

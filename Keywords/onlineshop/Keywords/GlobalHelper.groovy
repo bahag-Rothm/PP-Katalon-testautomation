@@ -36,119 +36,119 @@ import internal.GlobalVariable as Mapper
 
 public class GlobalHelper {
 
-	public static getCountryId(String countryId) {
-		Map<String,String> countryIds = new HashMap<String,String>();
-		countryIds.put("DE", "https://pps-qs-intern.bauhaus.info");
-		countryIds.put("AT", "https://pps-qs-intern.bauhaus.at");
-		countryIds.put("NL", "https://pps-qs-intern.nl.bauhaus");
-		countryIds.put("ES", "https://pps-qs-intern.bauhaus.es");
-		countryIds.put("HR", "https://pps-qs-intern.bauhaus.hr");
-		countryIds.put("CZ", "https://pps-qs-intern.bauhaus.cz");
+    public static getCountryId(String countryId) {
+        Map<String,String> countryIds = new HashMap<String,String>();
+        countryIds.put("DE", "https://pps-qs-intern.bauhaus.info");
+        countryIds.put("AT", "https://pps-qs-intern.bauhaus.at");
+        countryIds.put("NL", "https://pps-qs-intern.nl.bauhaus");
+        countryIds.put("ES", "https://pps-qs-intern.bauhaus.es");
+        countryIds.put("HR", "https://pps-qs-intern.bauhaus.hr");
+        countryIds.put("CZ", "https://pps-qs-intern.bauhaus.cz");
 
-		return countryIds.get(countryId);
-	}
+        return countryIds.get(countryId);
+    }
 
 
-	public static getMapperByCountryId(String countryId, String key) {
-		Map links = new HashMap();
-		String link = new String();
+    public static getMapperByCountryId(String countryId, String key) {
+        Map links = new HashMap();
+        String link = new String();
 
-		switch (countryId) {
-			case "DE":
-				links =  (Map) Mapper.DE;
-				System.out.println(links);
-				link = links.get(key);
-				System.out.print(link);
-				break;
-			case "AT":
-				links =  (Map) Mapper.AT;
-				System.out.println(links);
-				link = links.get(key);
-				System.out.print(link);
-				break;
-			case "NL":
-				links =  (Map) Mapper.NL;
-				System.out.println(links);
-				link = links.get(key);
-				System.out.print(link);
-				break;
-			case "ES":
-				links =  (Map) Mapper.ES;
-				System.out.println(links);
-				link = links.get(key);
-				System.out.print(link);
-				break;
-			case "HR":
-				links =  (Map) Mapper.HR;
-				System.out.println(links);
-				link = links.get(key);
-				System.out.print(link);
-				break;
-			case "CZ":
-				links =  (Map) Mapper.CZ;
-				System.out.println(links);
-				link = links.get(key);
-				System.out.print(link);
-				break;
-		}
+        switch (countryId) {
+            case "DE":
+                links =  (Map) Mapper.DE;
+                System.out.println(links);
+                link = links.get(key);
+                System.out.print(link);
+                break;
+            case "AT":
+                links =  (Map) Mapper.AT;
+                System.out.println(links);
+                link = links.get(key);
+                System.out.print(link);
+                break;
+            case "NL":
+                links =  (Map) Mapper.NL;
+                System.out.println(links);
+                link = links.get(key);
+                System.out.print(link);
+                break;
+            case "ES":
+                links =  (Map) Mapper.ES;
+                System.out.println(links);
+                link = links.get(key);
+                System.out.print(link);
+                break;
+            case "HR":
+                links =  (Map) Mapper.HR;
+                System.out.println(links);
+                link = links.get(key);
+                System.out.print(link);
+                break;
+            case "CZ":
+                links =  (Map) Mapper.CZ;
+                System.out.println(links);
+                link = links.get(key);
+                System.out.print(link);
+                break;
+        }
 
-		return link;
-	}
+        return link;
+    }
 
-	public static List<List<Object>> getDataFormExcelSheet(String filePath, String sheetName) {
-		FileInputStream fis = new FileInputStream(filePath);
-		XSSFWorkbook workbook = new XSSFWorkbook(fis);
+    public static List<List<Object>> getDataFormExcelSheet(String filePath, String sheetName) {
+        FileInputStream fis = new FileInputStream(filePath);
+        XSSFWorkbook workbook = new XSSFWorkbook(fis);
 
-		String sheetNameTrim = sheetName.trim();
-		XSSFSheet sheet = workbook.getSheet(sheetNameTrim);
-		System.out.print("\nSheet name is: '" + sheet.getSheetName()+"'")
+        String sheetNameTrim = sheetName.trim();
+        XSSFSheet sheet = workbook.getSheet(sheetNameTrim);
+        System.out.print("\nSheet name is: '" + sheet.getSheetName()+"'")
 
-		System.out.print("\nFirst cell in this sheet is: " + sheet.getRow(0).getCell(0).getStringCellValue())
+        System.out.print("\nFirst cell in this sheet is: " + sheet.getRow(0).getCell(0).getStringCellValue())
 
-		int rowCount = sheet.getLastRowNum();
-		List rowCollection = []
+        int rowCount = sheet.getLastRowNum();
+        List rowCollection = []
 
-		for (int i = 1; i < rowCount + 1; i++){
-			Row row
-			row = sheet.getRow(i)
-			List values = []
-			short size = row.getLastCellNum()
-			for (int j = 0; j < size ; j++){
-				Cell cell = row.getCell(j)
-				String value;
-				def type = cell.getCellTypeEnum().name();
-				if(type == "NUMERIC") {
-					int intValue = (int)cell.getNumericCellValue()
-					value = Integer.toString(intValue)
-				}
-				else {
-					value = cell.getStringCellValue()
-				}
-				values.add(value)
-			}
-			rowCollection.add(values)
-		}
+        for (int i = 1; i < rowCount + 1; i++){
+            Row row
+            row = sheet.getRow(i)
+            List values = []
+            short size = row.getLastCellNum()
+            for (int j = 0; j < size ; j++){
+                Cell cell = row.getCell(j)
+                String value;
+                def type = cell.getCellTypeEnum().name();
+                if(type == "NUMERIC") {
+                    int intValue = (int)cell.getNumericCellValue()
+                    value = Integer.toString(intValue)
+                }
+                else {
+                    value = cell.getStringCellValue()
+                }
+                values.add(value)
+            }
+            rowCollection.add(values)
+        }
 
-		fis.close();
-		System.out.print("\nFound data are: " + rowCollection.size())
+        fis.close();
+        System.out.print("\nFound data are: " + rowCollection.size())
 
-		return rowCollection
-	}
+        return rowCollection
+    }
 
-	@Keyword
-	def checkTextIfContains(String givenText, String checkedString) {
+    @Keyword
+    def checkTextIfContains(String givenText, String checkedString) {
 
-		Boolean flag = false
+        Boolean flag = false
 
-		if (checkedString.contains(givenText) && checkedString!=null && checkedString!="") {
-			System.out.println((givenText + ' is contains: ') + checkedString)
-			flag = true
-		} else {
-			System.out.println(givenText + ' is not contains: ' + checkedString)
-			KeywordUtil.markFailedAndStop(givenText + ' is not contains: ' + checkedString);
-		}
+        if (checkedString.contains(givenText) && checkedString!=null && checkedString!="") {
+            System.out.println((givenText + ' is contains: ') + checkedString)
+            flag = true
+        } else {
+            System.out.println(givenText + ' is not contains: ' + checkedString)
+            KeywordUtil.markFailedAndStop(givenText + ' is not contains: ' + checkedString);
+        }
 
-		System.out.println('Return value is: ' + flag)
-		return flag;
-	}
+        System.out.println('Return value is: ' + flag)
+        return flag;
+    }
 }

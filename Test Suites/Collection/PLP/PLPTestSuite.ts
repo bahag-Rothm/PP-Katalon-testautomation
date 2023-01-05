@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>7ea9eedb-6975-4242-9f43-66a49a06bb92</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/PLPMainPage/CheckTitleProductAndVariants</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -48,7 +48,7 @@
    <testCaseLink>
       <guid>020a5fc1-4a88-4a43-9567-762ef82b699f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/PLPMainPage/CheckFilterbar</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -82,7 +82,7 @@
    <testCaseLink>
       <guid>06c1f6ce-a982-4890-b17f-286f0edd6606</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/PLPMainPage/CheckSubCategory</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -116,7 +116,7 @@
    <testCaseLink>
       <guid>a9f07c4c-8b35-4433-96e8-4b5dade3041e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/PLPMainPage/Sorting</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -150,7 +150,7 @@
    <testCaseLink>
       <guid>0b1bd3e6-c1a9-42c6-9d97-bb23adb9ee2f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/PLPMainPage/ButtonDeleteAllFilter</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -184,7 +184,7 @@
    <testCaseLink>
       <guid>9fe91e31-202f-47f3-9649-b34bf5244a6d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/PLPMainPage/CheckFilterbarButtons</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -218,7 +218,7 @@
    <testCaseLink>
       <guid>62ad7209-7bd1-477c-8cbc-a1c26365caeb</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/PLPMainPage/FilterSlider</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -252,7 +252,7 @@
    <testCaseLink>
       <guid>a074ef20-c3b5-4da2-9dbe-6a0fd4697437</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/PLPMainPage/FilterColorTiles</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -286,7 +286,7 @@
    <testCaseLink>
       <guid>217540ad-def1-4913-b8f1-0e265e6ac5fc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/PLPMainPage/FilterCategory</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -354,7 +354,7 @@
    <testCaseLink>
       <guid>783bba39-4014-4b42-bf03-2e2621d30187</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/PLPMainPage/FilterCheckbox</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>

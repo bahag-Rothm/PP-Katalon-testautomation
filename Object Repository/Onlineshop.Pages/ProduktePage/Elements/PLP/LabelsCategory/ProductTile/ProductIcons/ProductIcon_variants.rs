@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Comparison</name>
+   <name>ProductIcon_variants</name>
    <tag></tag>
-   <elementGuidId>3415ba8a-c86b-46c0-9cf7-b9aa7e193c77</elementGuidId>
+   <elementGuidId>4967eb48-821f-4283-ac64-0b94f231c0b5</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='js_off-canvas-toggle-compare']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[@class='product-list-tile__variants']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

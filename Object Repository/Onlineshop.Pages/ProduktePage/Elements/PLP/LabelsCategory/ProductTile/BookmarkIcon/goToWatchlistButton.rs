@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>goToComparisonButton</name>
+   <name>goToWatchlistButton</name>
    <tag></tag>
-   <elementGuidId>25ac2d9d-bc50-4af9-8c57-49ea412ca215</elementGuidId>
+   <elementGuidId>3c2982af-e7ba-4292-b95c-57aec61396db</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='product-control product-control--comparison']/a[@class='product-control__link']</value>
+         <value>//div[@class='product-control product-control--watchlist']/a[@class='product-control__link']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

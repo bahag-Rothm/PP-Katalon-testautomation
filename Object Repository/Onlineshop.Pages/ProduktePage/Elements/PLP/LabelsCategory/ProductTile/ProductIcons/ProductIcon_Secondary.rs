@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>OnlineNotAvailable</name>
+   <name>ProductIcon_Secondary</name>
    <tag></tag>
-   <elementGuidId>98e68dd5-af31-4d3c-ba40-e099208519cd</elementGuidId>
+   <elementGuidId>e112978a-1e9d-4486-9ee5-70fc37128274</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='d-flex']</value>
+         <value>//div[@class='product-list-tile__eyecatcher-item']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

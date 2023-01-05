@@ -50,6 +50,7 @@ import org.openqa.selenium.Cookie
 
 class HomePageHelper {
 
+	//opens the browser
 	@Keyword
 	def openBrowser(String countryId) {
 		String link = GlobalHelper.getMapperByCountryId(countryId, "link");
@@ -57,7 +58,8 @@ class HomePageHelper {
 		acceptCookies(countryId);
 		closePopup();
 	}
-
+	
+	//clicks the shop button and choose a BAUHAUS shop 
 	@Keyword
 	def chooseBAUHAUS(String shopName) {
 
@@ -76,18 +78,20 @@ class HomePageHelper {
 		KeywordUtil.logInfo("ButtonBAUHAUSAuswählen has been clicked");
 	}
 
-
+	//closes the browser
 	@Keyword
 	def closeBrowser() {
 		WebUI.closeBrowser();
 	}
 
+	//Navigates to the current country 
 	@Keyword
 	def navigateTo(String countryId) {
 		String link = GlobalHelper.getMapperByCountryId(countryId, "link");
 		WebDriver webDriver = DriverFactory.getWebDriver();
 		webDriver.navigate().to(link);
 	}
+
 
 	@Keyword
 	def checkCountOfMenuElements(String input) {

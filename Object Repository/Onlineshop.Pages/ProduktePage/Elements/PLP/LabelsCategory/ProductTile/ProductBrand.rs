@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ProductIcon_variants</name>
+   <name>ProductBrand</name>
    <tag></tag>
-   <elementGuidId>4967eb48-821f-4283-ac64-0b94f231c0b5</elementGuidId>
+   <elementGuidId>97e7a702-c1e5-4256-8dd6-55c1fda00796</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='product-list-tile__variants']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//span[@class='product-list-tile__info__line']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

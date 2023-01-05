@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>OnlineAvailable</name>
+   <name>ProductName</name>
    <tag></tag>
-   <elementGuidId>092b1e5c-1569-4034-8643-b1196006bdfa</elementGuidId>
+   <elementGuidId>05dda948-bf65-42a1-b758-35e1f3e831b6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='d-flex fg-success']</value>
+         <value>//div[@class='product-list-tile__info__line']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

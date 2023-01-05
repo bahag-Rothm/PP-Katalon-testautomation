@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ProductIcon_Third</name>
+   <name>NumberOfShownProducts</name>
    <tag></tag>
-   <elementGuidId>91a4785b-e16e-4162-af81-694231881f96</elementGuidId>
+   <elementGuidId>cc7ddd45-92bb-49fa-bc21-507443de5b3e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='product-list-tile__eyecatcher-item bg-info']</value>
+         <value>//span[@class='resultCurrentCount']</value>
       </entry>
       <entry>
          <key>BASIC</key>

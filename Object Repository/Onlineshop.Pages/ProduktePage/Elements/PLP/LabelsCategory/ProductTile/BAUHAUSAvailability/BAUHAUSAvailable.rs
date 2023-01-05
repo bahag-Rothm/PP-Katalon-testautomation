@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BAUHAUSCheckText</name>
+   <name>BAUHAUSAvailable</name>
    <tag></tag>
-   <elementGuidId>a80b2ecc-2355-4faa-babe-6ceb693613d5</elementGuidId>
+   <elementGuidId>4e751802-b7ed-4402-befe-2bcea4761602</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='product-list-tile__availability-store']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@class='d-flex fg-success']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

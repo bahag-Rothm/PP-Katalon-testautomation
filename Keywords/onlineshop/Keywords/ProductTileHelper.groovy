@@ -49,17 +49,19 @@ import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 public class ProductTileHelper {
-
+	
+	//basic producttile width
 	String tilewidth = 550;
-
+	
+	//basic producttile height
 	String tileheight = 320;
 
-
+	//Checks if the product image is the right size and visible 
 	@Keyword
 	def checkproductImage() {
-		String flag = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductImage'), 3)
-		String flagwidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductImage'))
-		String flagheight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductImage'))
+		String flag = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductImage'), 3)
+		String flagwidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductImage'))
+		String flagheight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductImage'))
 		KeywordUtil.logInfo(flagwidth);
 		KeywordUtil.logInfo(flagheight);
 		if( flagwidth <= tilewidth && flagheight <= tileheight) {
@@ -80,15 +82,14 @@ public class ProductTileHelper {
 		}
 	}
 
+	//Checks if the variables tag is the right size and visible
 	@Keyword
 	def checkVariants() {
 		//change for string contains:
-		String flag = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), 3)
-		String flagwidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'))
-		String flagheight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'))
-		String resultPrimary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Variants_Number'), FailureHandling.OPTIONAL)
-
-
+		String flag = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), 3)
+		String flagwidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'))
+		String flagheight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'))
+		String resultPrimary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Variants_Number'), FailureHandling.OPTIONAL)
 		KeywordUtil.logInfo("Variants are visible: "+resultPrimary);
 		KeywordUtil.logInfo("Variants icon are visible: "+flag);
 		if( flagwidth <= tilewidth && flagheight <= tileheight) {
@@ -106,27 +107,26 @@ public class ProductTileHelper {
 		}
 	}
 
+	//Checks if the set tag is the right size and visible
 	@Keyword
 	def checkSetIcon() {
-
-
-		String primary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Primary'), 3, FailureHandling.OPTIONAL)
-		String secondary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Secondary'),3, FailureHandling.OPTIONAL)
-		String third = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Third'),3, FailureHandling.OPTIONAL)
+		String primary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Primary'), 3, FailureHandling.OPTIONAL)
+		String secondary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Secondary'),3, FailureHandling.OPTIONAL)
+		String third = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Third'),3, FailureHandling.OPTIONAL)
 
 		if(primary == "true" || secondary == "true" || third == "true" ) {
 
-			String resultPrimary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Primary'), FailureHandling.OPTIONAL)
-			String flagwidthPrimary = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
-			String flagheightPrimary = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+			String resultPrimary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Primary'), FailureHandling.OPTIONAL)
+			String flagwidthPrimary = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+			String flagheightPrimary = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
 
-			String resultSecondary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Secondary'), FailureHandling.OPTIONAL)
-			String flagwidthSecondary = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
-			String flagheightSecondary = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+			String resultSecondary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Secondary'), FailureHandling.OPTIONAL)
+			String flagwidthSecondary = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+			String flagheightSecondary = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
 
-			String resultThird = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Third'), FailureHandling.OPTIONAL)
-			String flagwidthThird = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
-			String flagheightThird = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+			String resultThird = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Third'), FailureHandling.OPTIONAL)
+			String flagwidthThird = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+			String flagheightThird = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
 
 
 			if( flagwidthPrimary <= tilewidth && flagheightPrimary <= tileheight || flagwidthSecondary <= tilewidth && flagheightSecondary <= tileheight || flagwidthThird <= tilewidth && flagheightThird <= tileheight) {
@@ -152,24 +152,24 @@ public class ProductTileHelper {
 		}
 	}
 
-
+	//Checks if the Recommendation tag is the right size and visible
 	@Keyword
 	def checkRecommendationIcon() {
-		String primary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Primary'), 3, FailureHandling.OPTIONAL)
-		String resultPrimary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Primary'), FailureHandling.OPTIONAL)
-		String secondary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Secondary'),3, FailureHandling.OPTIONAL)
-		String resultSecondary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Secondary'), FailureHandling.OPTIONAL)
-		String third = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Third'),3, FailureHandling.OPTIONAL)
-		String resultThird = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Third'), FailureHandling.OPTIONAL)
+		String primary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Primary'), 3, FailureHandling.OPTIONAL)
+		String resultPrimary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Primary'), FailureHandling.OPTIONAL)
+		String secondary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Secondary'),3, FailureHandling.OPTIONAL)
+		String resultSecondary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Secondary'), FailureHandling.OPTIONAL)
+		String third = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Third'),3, FailureHandling.OPTIONAL)
+		String resultThird = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Third'), FailureHandling.OPTIONAL)
 
 
 
-		String flagwidthPrimary = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
-		String flagheightPrimary = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+		String flagwidthPrimary = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+		String flagheightPrimary = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
 
 
-		String flagwidthSecondary = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
-		String flagheightSecondary = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+		String flagwidthSecondary = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+		String flagheightSecondary = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
 
 
 		if( flagwidthPrimary <= tilewidth && flagheightPrimary <= tileheight && flagwidthSecondary <= tilewidth && flagheightSecondary <= tileheight) {
@@ -196,12 +196,13 @@ public class ProductTileHelper {
 		}
 	}
 
+	//Checks if the quantities advantage tag is the right size and visible
 	@Keyword
 	def checkQuantitiesAdvantageIcon() {
 		//change for string contains:
-		String flag = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_quantitiesAdvantage'), 3)
-		String flagWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_quantitiesAdvantage'))
-		String flagHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_quantitiesAdvantage'))
+		String flag = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_quantitiesAdvantage'), 3)
+		String flagWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_quantitiesAdvantage'))
+		String flagHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_quantitiesAdvantage'))
 
 		if( flagWidth <= tilewidth && flagHeight <= tileheight) {
 
@@ -220,22 +221,23 @@ public class ProductTileHelper {
 		}
 	}
 
+	//Checks if the new tag is the right size and visible
 	@Keyword
 	def checkNewIcon() {
-		String primary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Primary'), 3, FailureHandling.OPTIONAL)
-		String resultPrimary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Primary'), FailureHandling.OPTIONAL)
-		String secondary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Secondary'),3, FailureHandling.OPTIONAL)
-		String resultSecondary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Secondary'), FailureHandling.OPTIONAL)
-		String third = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Third'),3, FailureHandling.OPTIONAL)
-		String resultThird = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Third'), FailureHandling.OPTIONAL)
+		String primary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Primary'), 3, FailureHandling.OPTIONAL)
+		String resultPrimary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Primary'), FailureHandling.OPTIONAL)
+		String secondary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Secondary'),3, FailureHandling.OPTIONAL)
+		String resultSecondary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Secondary'), FailureHandling.OPTIONAL)
+		String third = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Third'),3, FailureHandling.OPTIONAL)
+		String resultThird = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Third'), FailureHandling.OPTIONAL)
 
 
-		String flagwidthPrimary = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
-		String flagheightPrimary = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+		String flagwidthPrimary = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+		String flagheightPrimary = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
 
 
-		String flagwidthSecondary = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
-		String flagheightSecondary = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+		String flagwidthSecondary = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+		String flagheightSecondary = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
 
 		if( flagwidthPrimary <= tilewidth && flagheightPrimary <= tileheight && flagwidthSecondary <= tilewidth && flagheightSecondary <= tileheight) {
 
@@ -266,23 +268,24 @@ public class ProductTileHelper {
 
 	}
 
+	//Checks if the quarantee tag is the right size and visible
 	@Keyword
 	def checkGuaranteeIcon() {
 
-		String primary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Primary'), 3, FailureHandling.OPTIONAL)
-		String resultPrimary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Primary'), FailureHandling.OPTIONAL)
-		String secondary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Secondary'), 3, FailureHandling.OPTIONAL)
-		String resultSecondary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Secondary'), FailureHandling.OPTIONAL)
-		String third = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Third'), 3, FailureHandling.OPTIONAL)
-		String resultThird = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Third'), FailureHandling.OPTIONAL)
+		String primary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Primary'), 3, FailureHandling.OPTIONAL)
+		String resultPrimary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Primary'), FailureHandling.OPTIONAL)
+		String secondary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Secondary'), 3, FailureHandling.OPTIONAL)
+		String resultSecondary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Secondary'), FailureHandling.OPTIONAL)
+		String third = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Third'), 3, FailureHandling.OPTIONAL)
+		String resultThird = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Third'), FailureHandling.OPTIONAL)
 
 
-		String flagwidthPrimary = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
-		String flagheightPrimary = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+		String flagwidthPrimary = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+		String flagheightPrimary = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
 
 
-		String flagwidthSecondary = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
-		String flagheightSecondary = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+		String flagwidthSecondary = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+		String flagheightSecondary = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
 
 		if( flagwidthPrimary <= tilewidth && flagheightPrimary <= tileheight && flagwidthSecondary <= tilewidth && flagheightSecondary <= tileheight) {
 
@@ -312,21 +315,21 @@ public class ProductTileHelper {
 		}
 	}
 
-
+	//Checks if the ad tag is the right size and visible
 	@Keyword
 	def checkAdvertisingIcon() {
 
-		String primary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Primary'), 3, FailureHandling.OPTIONAL)
-		String resultPrimary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Primary'), FailureHandling.OPTIONAL)
-		String secondary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Secondary'), 3, FailureHandling.OPTIONAL)
-		String resultSecondary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_Secondary'), FailureHandling.OPTIONAL)
+		String primary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Primary'), 3, FailureHandling.OPTIONAL)
+		String resultPrimary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Primary'), FailureHandling.OPTIONAL)
+		String secondary = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Secondary'), 3, FailureHandling.OPTIONAL)
+		String resultSecondary = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_Secondary'), FailureHandling.OPTIONAL)
 
-		String flagwidthPrimary = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
-		String flagheightPrimary = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+		String flagwidthPrimary = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+		String flagheightPrimary = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
 
 
-		String flagwidthSecondary = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
-		String flagheightSecondary = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+		String flagwidthSecondary = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
+		String flagheightSecondary = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductIcons/ProductIcon_variants'), FailureHandling.OPTIONAL)
 
 		KeywordUtil.logInfo(primary);
 		KeywordUtil.logInfo(secondary);
@@ -358,13 +361,13 @@ public class ProductTileHelper {
 
 
 	}
-
+	
+	//Checks if the product name is the right size and visible
 	@Keyword
 	def checkProductName() {
-		//change for string contains:
-		String flag = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductName'), 3)
-		String flagWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductName'))
-		String flagHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductName'))
+		String flag = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductName'), 3)
+		String flagWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductName'))
+		String flagHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductName'))
 
 		if( flagWidth <= tilewidth && flagHeight <= tileheight) {
 
@@ -382,13 +385,14 @@ public class ProductTileHelper {
 			return false
 		}
 	}
-
+	
+	//Checks if the product brand is the right size and visible
 	@Keyword
 	def checkProductBrand() {
 		//change for string contains:
-		String flag = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductBrand'), 3)
-		String flagWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductBrand'))
-		String flagHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductBrand'))
+		String flag = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductBrand'), 3)
+		String flagWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductBrand'))
+		String flagHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductBrand'))
 
 		if( flagWidth <= tilewidth && flagHeight <= tileheight) {
 
@@ -407,13 +411,12 @@ public class ProductTileHelper {
 		}
 	}
 
+	//Checks if the product attributes is the right size and visible
 	@Keyword
 	def checkProductAttributes() {
-		//change for string contains:
-
-		String flag = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductAttributes'), 3)
-		String flagWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductAttributes'))
-		String flagHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ProductAttributes'))
+		String flag = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductAttributes'), 3)
+		String flagWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductAttributes'))
+		String flagHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ProductAttributes'))
 
 		if( flagWidth <= tilewidth && flagHeight <= tileheight) {
 
@@ -432,26 +435,27 @@ public class ProductTileHelper {
 		}
 	}
 
+	//Checks if the product is reservable, the right size and visible
 	@Keyword
 	def checkReseravable() {
 
-		String reservable = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), 3, FailureHandling.OPTIONAL)
-		String resultReservable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), FailureHandling.OPTIONAL)
-		String reservableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), FailureHandling.OPTIONAL)
-		String reservableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), FailureHandling.OPTIONAL)
+		String reservable = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), 3, FailureHandling.OPTIONAL)
+		String resultReservable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), FailureHandling.OPTIONAL)
+		String reservableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), FailureHandling.OPTIONAL)
+		String reservableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), FailureHandling.OPTIONAL)
 
-		String available = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), 3, FailureHandling.OPTIONAL)
-		String resultavailable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), FailureHandling.OPTIONAL)
-		String availableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), FailureHandling.OPTIONAL)
-		String availableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), FailureHandling.OPTIONAL)
+		String available = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), 3, FailureHandling.OPTIONAL)
+		String resultavailable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), FailureHandling.OPTIONAL)
+		String availableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), FailureHandling.OPTIONAL)
+		String availableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), FailureHandling.OPTIONAL)
 
-		String orderable = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), 3, FailureHandling.OPTIONAL)
-		String resultOrderable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), FailureHandling.OPTIONAL)
-		String orderableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), FailureHandling.OPTIONAL)
-		String orderableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), FailureHandling.OPTIONAL)
+		String orderable = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), 3, FailureHandling.OPTIONAL)
+		String resultOrderable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), FailureHandling.OPTIONAL)
+		String orderableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), FailureHandling.OPTIONAL)
+		String orderableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), FailureHandling.OPTIONAL)
 
 
-		String checkText = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSCheckText'), FailureHandling.OPTIONAL)
+		String checkText = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSCheckText'), FailureHandling.OPTIONAL)
 
 		KeywordUtil.logInfo(checkText);
 		KeywordUtil.logInfo(resultReservable);
@@ -486,26 +490,27 @@ public class ProductTileHelper {
 		}
 	}
 
+	//Checks if the product is orderable, the right size and visible
 	@Keyword
 	def checkOrderable() {
 
-		String reservable = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), 3, FailureHandling.OPTIONAL)
-		String resultReservable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), FailureHandling.OPTIONAL)
-		String reservableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), FailureHandling.OPTIONAL)
-		String reservableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), FailureHandling.OPTIONAL)
+		String reservable = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), 3, FailureHandling.OPTIONAL)
+		String resultReservable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), FailureHandling.OPTIONAL)
+		String reservableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), FailureHandling.OPTIONAL)
+		String reservableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), FailureHandling.OPTIONAL)
 
-		String available = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), 3, FailureHandling.OPTIONAL)
-		String resultavailable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), FailureHandling.OPTIONAL)
-		String availableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), FailureHandling.OPTIONAL)
-		String availableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), FailureHandling.OPTIONAL)
+		String available = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), 3, FailureHandling.OPTIONAL)
+		String resultavailable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), FailureHandling.OPTIONAL)
+		String availableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), FailureHandling.OPTIONAL)
+		String availableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), FailureHandling.OPTIONAL)
 
-		String orderable = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), 3, FailureHandling.OPTIONAL)
-		String resultOrderable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), FailureHandling.OPTIONAL)
-		String orderableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), FailureHandling.OPTIONAL)
-		String orderableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), FailureHandling.OPTIONAL)
+		String orderable = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), 3, FailureHandling.OPTIONAL)
+		String resultOrderable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), FailureHandling.OPTIONAL)
+		String orderableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), FailureHandling.OPTIONAL)
+		String orderableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), FailureHandling.OPTIONAL)
 
 
-		String checkText = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSCheckText'), FailureHandling.OPTIONAL)
+		String checkText = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSCheckText'), FailureHandling.OPTIONAL)
 
 		KeywordUtil.logInfo(checkText);
 		KeywordUtil.logInfo(resultReservable);
@@ -541,26 +546,27 @@ public class ProductTileHelper {
 		}
 	}
 
+	//Checks if the product is available, the right size and visible
 	@Keyword
 	def checkAvailable() {
 
-		String reservable = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), 3, FailureHandling.OPTIONAL)
-		String resultReservable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), FailureHandling.OPTIONAL)
-		String reservableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), FailureHandling.OPTIONAL)
-		String reservableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), FailureHandling.OPTIONAL)
+		String reservable = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), 3, FailureHandling.OPTIONAL)
+		String resultReservable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), FailureHandling.OPTIONAL)
+		String reservableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), FailureHandling.OPTIONAL)
+		String reservableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSReservable'), FailureHandling.OPTIONAL)
 
-		String available = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), 3, FailureHandling.OPTIONAL)
-		String resultavailable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), FailureHandling.OPTIONAL)
-		String availableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), FailureHandling.OPTIONAL)
-		String availableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), FailureHandling.OPTIONAL)
+		String available = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), 3, FailureHandling.OPTIONAL)
+		String resultavailable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), FailureHandling.OPTIONAL)
+		String availableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), FailureHandling.OPTIONAL)
+		String availableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSAvailable'), FailureHandling.OPTIONAL)
 
-		String orderable = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), 3, FailureHandling.OPTIONAL)
-		String resultOrderable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), FailureHandling.OPTIONAL)
-		String orderableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), FailureHandling.OPTIONAL)
-		String orderableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), FailureHandling.OPTIONAL)
+		String orderable = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), 3, FailureHandling.OPTIONAL)
+		String resultOrderable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), FailureHandling.OPTIONAL)
+		String orderableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), FailureHandling.OPTIONAL)
+		String orderableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSOrderable'), FailureHandling.OPTIONAL)
 
 
-		String checkText = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSCheckText'), FailureHandling.OPTIONAL)
+		String checkText = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSCheckText'), FailureHandling.OPTIONAL)
 		KeywordUtil.logInfo("__________________");
 		KeywordUtil.logInfo(checkText);
 		KeywordUtil.logInfo("__________________");
@@ -594,16 +600,16 @@ public class ProductTileHelper {
 			return false
 		}
 	}
-
+	//Checks if the product is online available, the right size and visible
 	@Keyword
 	def checkOnlineAvailable() {
 
 
-		String Available = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/OnlineStatus/OnlineAvailable'), 3, FailureHandling.OPTIONAL)
-		String resultAvailable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/OnlineStatus/OnlineAvailable'), FailureHandling.OPTIONAL)
+		String Available = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/OnlineStatus/OnlineAvailable'), 3, FailureHandling.OPTIONAL)
+		String resultAvailable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/OnlineStatus/OnlineAvailable'), FailureHandling.OPTIONAL)
 
-		String AvailableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/OnlineStatus/OnlineAvailable'))
-		String AvailableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/OnlineStatus/OnlineAvailable'))
+		String AvailableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/OnlineStatus/OnlineAvailable'))
+		String AvailableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/OnlineStatus/OnlineAvailable'))
 
 		if( AvailableWidth <= tilewidth && AvailableHeight <= tileheight) {
 
@@ -626,16 +632,16 @@ public class ProductTileHelper {
 
 	}
 
-
+	//Checks if the product is not online available, the right size and visible
 	@Keyword
 	def checkOnlineNotAvailable() {
 
-		String notAvailable = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/OnlineStatus/OnlineNotAvailable'), 3, FailureHandling.OPTIONAL)
-		String resultnotAvailable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/OnlineStatus/OnlineNotAvailable'), FailureHandling.OPTIONAL)
+		String notAvailable = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/OnlineStatus/OnlineNotAvailable'), 3, FailureHandling.OPTIONAL)
+		String resultnotAvailable = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/OnlineStatus/OnlineNotAvailable'), FailureHandling.OPTIONAL)
 
 
-		String notAavailableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/OnlineStatus/OnlineNotAvailable'))
-		String notAvailableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/OnlineStatus/OnlineNotAvailable'))
+		String notAavailableWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/OnlineStatus/OnlineNotAvailable'))
+		String notAvailableHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/OnlineStatus/OnlineNotAvailable'))
 
 		if( notAavailableWidth <= tilewidth && notAvailableHeight <= tileheight) {
 
@@ -657,23 +663,24 @@ public class ProductTileHelper {
 		}
 
 	}
-
+	
+	//Checks if the product energy efficiency class is the right size and visible
 	@Keyword
 	def checkEnergyEfficiencyClass() {
 
-		String energyefficiencyclass = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/EnergyEfficiencyClassBox'), 3)
+		String energyefficiencyclass = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/EnergyEfficiencyClassBox'), 3)
 
-		String energyefficiencyclassWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/EnergyEfficiencyClassBox'))
-		String energyefficiencyclassHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/EnergyEfficiencyClassBox'))
+		String energyefficiencyclassWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/EnergyEfficiencyClassBox'))
+		String energyefficiencyclassHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/EnergyEfficiencyClassBox'))
 
 		if( energyefficiencyclassWidth <= tilewidth && energyefficiencyclassHeight <= tileheight) {
 
 
 			if(energyefficiencyclass == "true") {
 				KeywordUtil.logInfo("Energy efficiency class box is shown");
-				WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/EnergyEfficiencyClassBox'))
+				WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/EnergyEfficiencyClassBox'))
 				KeywordUtil.logInfo("Clicked energy efficiency class box" );
-				String picture = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/EnergyEfficiencyImg'), 5)
+				String picture = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/EnergyEfficiencyImg'), 5)
 				KeywordUtil.logInfo(picture );
 				if(picture == "true") {
 					KeywordUtil.logInfo("Energy efficiency image is shown too");
@@ -688,15 +695,16 @@ public class ProductTileHelper {
 			return false
 		}
 	}
-
+		
+	//Checks if the BAUHAUS choose box is the right size and visible
 	@Keyword
 	def checkBAUHAUSChoose() {
 
-		String BAUHAUSChoose = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSChoose'), 3)
-		String resultBAUHAUSChoose = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSChoose'), FailureHandling.OPTIONAL)
+		String BAUHAUSChoose = WebUI.waitForElementVisible(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSChoose'), 3)
+		String resultBAUHAUSChoose = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSChoose'), FailureHandling.OPTIONAL)
 
-		String BAUHAUSChooseWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSChoose'))
-		String BAUHAUSChooseHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BAUHAUSAvailability/BAUHAUSChoose'))
+		String BAUHAUSChooseWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSChoose'))
+		String BAUHAUSChooseHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BAUHAUSAvailability/BAUHAUSChoose'))
 
 		if( BAUHAUSChooseWidth <= tilewidth && BAUHAUSChooseHeight <= tileheight) {
 
@@ -717,29 +725,31 @@ public class ProductTileHelper {
 			return false
 		}
 	}
-
+	
+	
+	//Checks if the BAUHAUS choose box is the right size and visible
 	@Keyword
 	def checkComparisonIcon() {
 
-		String comparison = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ComparisonIcon/ProductComparisonButton'), 3, FailureHandling.OPTIONAL)
-		String resultComparison = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ComparisonIcon/ProductComparisonButton'), FailureHandling.OPTIONAL)
+		String comparison = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ComparisonIcon/ProductComparisonButton'), 3, FailureHandling.OPTIONAL)
+		String resultComparison = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ComparisonIcon/ProductComparisonButton'), FailureHandling.OPTIONAL)
 
-		String comparisonWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ComparisonIcon/ProductComparisonButton'), FailureHandling.OPTIONAL)
-		String comparisonHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ComparisonIcon/ProductComparisonButton'), FailureHandling.OPTIONAL)
+		String comparisonWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ComparisonIcon/ProductComparisonButton'), FailureHandling.OPTIONAL)
+		String comparisonHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ComparisonIcon/ProductComparisonButton'), FailureHandling.OPTIONAL)
 
 		if( comparisonWidth <= tilewidth && comparisonHeight <= tileheight) {
 
 			if(comparison == "true" ) {
 				if(resultComparison == "Vergleichen" || resultComparison == "Vergelijken" || resultComparison == "Comparar" || resultComparison == "Usporedi") {
 					KeywordUtil.logInfo("Comparison button exist and the text is right");
-					WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ComparisonIcon/ProductComparisonButton'))
+					WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ComparisonIcon/ProductComparisonButton'))
 					WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/Sidebar/CloseSideBar'))
-					String comparisonpage = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ComparisonIcon/goToComparisonButton'), 3, FailureHandling.OPTIONAL)
+					String comparisonpage = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ComparisonIcon/goToComparisonButton'), 3, FailureHandling.OPTIONAL)
 					if(comparisonpage == "true") {
-						String resultComparisonpage = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ComparisonIcon/goToComparisonButton'), FailureHandling.OPTIONAL)
+						String resultComparisonpage = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ComparisonIcon/goToComparisonButton'), FailureHandling.OPTIONAL)
 						KeywordUtil.logInfo(resultComparisonpage);
 						if(resultComparisonpage == "Zum Vergleich" || resultComparisonpage == "Naar vergelijk" || resultComparisonpage == "A comparación" || resultComparisonpage == "Pogledaj usporedbu") {
-							String comparisonIcon = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/ComparisonIcon/Comparison'), 3, FailureHandling.OPTIONAL)
+							String comparisonIcon = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/ComparisonIcon/Comparison'), 3, FailureHandling.OPTIONAL)
 							if(comparisonIcon == "true") {
 								KeywordUtil.logInfo("To comparison page button exist, the text is right and the comparison Icon exists");
 								return true
@@ -763,14 +773,15 @@ public class ProductTileHelper {
 		}
 	}
 
+	//Checks if the bookmark box is the right size and visible
 	@Keyword
 	def checkBookmarkIcon() {
 
-		String bookmark = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BookmarkIcon/ProductWatchlistButton'), 3, FailureHandling.OPTIONAL)
-		String resultBookmark = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BookmarkIcon/ProductWatchlistButton'), FailureHandling.OPTIONAL)
+		String bookmark = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BookmarkIcon/ProductWatchlistButton'), 3, FailureHandling.OPTIONAL)
+		String resultBookmark = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BookmarkIcon/ProductWatchlistButton'), FailureHandling.OPTIONAL)
 
-		String bookmarkWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BookmarkIcon/ProductWatchlistButton'), FailureHandling.OPTIONAL)
-		String bookmarkHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BookmarkIcon/ProductWatchlistButton'), FailureHandling.OPTIONAL)
+		String bookmarkWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BookmarkIcon/ProductWatchlistButton'), FailureHandling.OPTIONAL)
+		String bookmarkHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BookmarkIcon/ProductWatchlistButton'), FailureHandling.OPTIONAL)
 
 		KeywordUtil.logInfo(bookmarkWidth);
 		KeywordUtil.logInfo(tilewidth);
@@ -782,11 +793,11 @@ public class ProductTileHelper {
 			if(bookmark == "true" ) {
 				if(resultBookmark == "Označi" || resultBookmark == "Merken" || resultBookmark == "Op verlanglijstje" || resultBookmark == "Favoritos") {
 					KeywordUtil.logInfo("Bookmark button exist and the text is right");
-					WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BookmarkIcon/ProductWatchlistButton'))
+					WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BookmarkIcon/ProductWatchlistButton'))
 					WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/Sidebar/CloseSideBar'))
-					String resultBookmarkpage = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BookmarkIcon/goToWatchlistButton'), FailureHandling.OPTIONAL)
+					String resultBookmarkpage = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BookmarkIcon/goToWatchlistButton'), FailureHandling.OPTIONAL)
 					if(resultBookmarkpage == "Nastavi na popis" || resultBookmarkpage == "Zur Merkliste" || resultBookmarkpage == "Naar verlanglijstje" || resultBookmarkpage == "Mis favoritos") {
-						String bookmarkIcon = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ProductTile/BookmarkIcon/Watchlist'), 3, FailureHandling.OPTIONAL)
+						String bookmarkIcon = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BookmarkIcon/Watchlist'), 3, FailureHandling.OPTIONAL)
 						if(bookmarkIcon == "true") {
 							KeywordUtil.logInfo("To comparison page button exist, the text is right and the bookmark icon exists");
 							return true

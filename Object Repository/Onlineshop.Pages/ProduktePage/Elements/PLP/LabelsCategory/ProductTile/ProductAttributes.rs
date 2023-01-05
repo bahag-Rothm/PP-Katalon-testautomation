@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BAUHAUSAvailable</name>
+   <name>ProductAttributes</name>
    <tag></tag>
-   <elementGuidId>4e751802-b7ed-4402-befe-2bcea4761602</elementGuidId>
+   <elementGuidId>c4c707d1-5fb6-4d2d-ab60-1c41c5ed7740</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='d-flex fg-success']</value>
+         <value>//div[@class='product-list-tile__info__line product-list-tile__info__attributes']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

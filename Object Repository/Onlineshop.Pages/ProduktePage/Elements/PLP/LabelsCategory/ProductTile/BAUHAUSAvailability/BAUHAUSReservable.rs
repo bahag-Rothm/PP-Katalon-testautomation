@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BAUHAUSChoose</name>
+   <name>BAUHAUSReservable</name>
    <tag></tag>
-   <elementGuidId>ec1da974-2a93-447f-b393-f24b5bdabf4f</elementGuidId>
+   <elementGuidId>97d0e940-5c9b-480a-87c4-1e0f2f8308e3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='product-list-tile__availability-store']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@class='d-flex fg-danger']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

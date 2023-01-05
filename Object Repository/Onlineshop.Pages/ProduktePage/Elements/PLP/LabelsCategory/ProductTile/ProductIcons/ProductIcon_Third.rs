@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ProductWatchlistButton</name>
+   <name>ProductIcon_Third</name>
    <tag></tag>
-   <elementGuidId>e84d5bb1-d005-41d9-9ba5-6ea7c265407b</elementGuidId>
+   <elementGuidId>91a4785b-e16e-4162-af81-694231881f96</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='product-control product-control--watchlist']/label[@class='product-control__label']/span[@class='product-control__text']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[@class='product-list-tile__eyecatcher-item bg-info']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

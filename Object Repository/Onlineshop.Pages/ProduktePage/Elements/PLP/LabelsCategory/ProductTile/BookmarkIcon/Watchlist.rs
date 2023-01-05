@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>NumberOfShownProducts</name>
+   <name>Watchlist</name>
    <tag></tag>
-   <elementGuidId>cc7ddd45-92bb-49fa-bc21-507443de5b3e</elementGuidId>
+   <elementGuidId>3918e833-4331-4c27-8e06-33751f623235</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[@class='resultCurrentCount']</value>
+         <value>//button[@id='js_off-canvas-toggle-watchlist']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
