@@ -58,6 +58,7 @@ public class PaginationHelper {
 	//Checks if the last seen icon is visible
 	@Keyword
 	def lastSeenPage() {
+		WebUI.delay(2)
 		String lastSeenIcon = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/LastSeen'), 3, FailureHandling.OPTIONAL)
 		String lastSeenIconWidth = WebUI.getElementWidth(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/LastSeen'))
 		String lastSeenIconHeight = WebUI.getElementHeight(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/LastSeen'))
@@ -68,7 +69,7 @@ public class PaginationHelper {
 				//click last seen Icon
 				WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/LastSeen'))
 				KeywordUtil.logInfo('Sidebar opened');
-				WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/CloseIconSideBar'))
+				WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/CloseSideBar'))
 				KeywordUtil.logInfo('Sidebar closed');
 				return true
 			}else {
@@ -81,6 +82,7 @@ public class PaginationHelper {
 	//Checks if the right number is shown
 	@Keyword
 	def showPagination() {
+		WebUI.delay(2)
 		String numES = 104;
 		String num = 108;
 		String paginationNum = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/Pagination/NumberOfShownProducts'), FailureHandling.OPTIONAL)
@@ -98,7 +100,7 @@ public class PaginationHelper {
 	//clicks on a product in the first block
 	@Keyword
 	def clickProductInTheFirstBlock() {
-
+		WebUI.delay(2)
 		String product = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/Pagination/ClickedRandomProducts'), 3, FailureHandling.OPTIONAL)
 		if(product == 'true') {
 
@@ -110,7 +112,7 @@ public class PaginationHelper {
 	//clicks on a product in the third block
 	@Keyword
 	def clickProductInTheThirdBlock() {
-
+		WebUI.delay(2)
 		String product = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/Pagination/ClickedProductInTheFirstBlock'), 3, FailureHandling.OPTIONAL)
 		if(product == 'true') {
 
@@ -122,8 +124,8 @@ public class PaginationHelper {
 	//checks the text from the load more button
 	@Keyword
 	def checkLoadMoreProducts() {
-		//First it is the "load more Products" button, after the second call it is the "see previous products button"
-		String button = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/Test'),FailureHandling.OPTIONAL)
+		WebUI.delay(2)
+		String button = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ShowMoreProductsButton'),FailureHandling.OPTIONAL)
 		KeywordUtil.logInfo(button);
 		if(button.contains("Mehr Produkte anzeigen")|| button.contains("Mostrar más productos") || button.contains("Bekijk meer producten") || button.contains("Prikaži više proizvoda") ) {
 
@@ -137,8 +139,7 @@ public class PaginationHelper {
 	//checks the text from the load previous button
 	@Keyword
 	def checkLoadPreviousProduct() {
-		//First it is the "load more Products" button, after the second call it it the "see previous products button"
-		String button = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/Test'),FailureHandling.OPTIONAL)
+		String button = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/ShowPreviousProductsButton'),FailureHandling.OPTIONAL)
 		KeywordUtil.logInfo(button);
 		if(button.contains("Mostrar productos anteriores")|| button.contains("Vorherige Produkte anzeigen") || button.contains("Bekijk eerdere producten") || button.contains("Prikaži prethodne proizvode") ) {
 
@@ -175,7 +176,7 @@ public class PaginationHelper {
 	//checks if a product is still present in the third block
 	@Keyword
 	def verifyProductPresentThirdBlock() {
-
+		WebUI.delay(2)
 		String product = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/Pagination/ClickedProductInTheFirstBlock'), 3, FailureHandling.OPTIONAL)
 		if(product == 'true') {
 
@@ -187,7 +188,7 @@ public class PaginationHelper {
 	//checks if a product is still present in the fourth block
 	@Keyword
 	def verifyProductPresentFourth() {
-
+		WebUI.delay(2)
 		String product = WebUI.verifyElementPresent(findTestObject('Onlineshop.Pages/ProduktePage/Elements/Pagination/ClickedProductInTheFourthBlock'), 3, FailureHandling.OPTIONAL)
 		if(product == 'true') {
 

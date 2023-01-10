@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>xpath=//div[@id='main']/section/div/button</value>
+         <value>//button[@data-message=&quot;adb-show-more-products-button&quot;]</value>
       </entry>
       <entry>
          <key>IMAGE</key>
@@ -21,7 +21,7 @@
          <value>div#main>section>div>button</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +29,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-primary btn-secondary</value>
-      <webElementGuid>dbd7ebf2-e4d8-4bb6-a8ae-68646a539c5b</webElementGuid>
+      <webElementGuid>f3704f8f-dc67-4382-8c6c-bc0c0ee84404</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,6 +37,6 @@
       <name>id</name>
       <type>Main</type>
       <value>main/section/div/button</value>
-      <webElementGuid>17fa3406-80f5-466d-bfb8-4f587efcefb7</webElementGuid>
+      <webElementGuid>cc8973c8-17b3-488a-8d37-037e419a64c5</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

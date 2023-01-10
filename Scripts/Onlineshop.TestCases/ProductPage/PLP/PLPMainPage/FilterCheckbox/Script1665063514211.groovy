@@ -21,9 +21,14 @@ CustomKeywords.'onlineshop.Keywords.HomePageHelper.openBrowser'(countryId)
 
 CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.navigateToOverview'(countryId, category, productNr)
 
-boolean result = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.clickBrandButton'()
+boolean resultfilterbar = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.clickFilterAndSortButton'()
+
+assert resultfilterbar == true
+
+boolean result = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.clickFilterBarBrandButton'()
 
 assert result == true
+
 
 String Product = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.getProductNumberButtonText'()
 

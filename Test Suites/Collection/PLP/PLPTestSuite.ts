@@ -354,7 +354,7 @@
    <testCaseLink>
       <guid>783bba39-4014-4b42-bf03-2e2621d30187</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/PLPMainPage/FilterCheckbox</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>

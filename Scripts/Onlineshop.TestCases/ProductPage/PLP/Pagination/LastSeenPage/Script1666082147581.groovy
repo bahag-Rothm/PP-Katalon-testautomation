@@ -38,10 +38,6 @@ WebUI.delay(2)
 CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.setViewPortsizeToMobile'()
 WebUI.delay(5)
 
-
-
-WebUI.waitForPageLoad(0)
-
 boolean result2 = CustomKeywords.'onlineshop.Keywords.PaginationHelper.lastSeenPage'()
 
 assert result2 == false

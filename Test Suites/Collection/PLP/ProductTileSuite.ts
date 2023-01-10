@@ -21,7 +21,7 @@
    <testCaseLink>
       <guid>8693b31f-bdec-4756-adeb-16b62a267a91</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/ProductTile/CheckBookmark</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>

@@ -23,47 +23,24 @@ CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.navigateToOverview'
 
 WebUI.waitForPageLoad(5)
 
+
 boolean resultnormalbar = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.checkIfNormalBar'()
 
 assert resultnormalbar == true
+
+boolean resubltnormalbar = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.checkButtons'()
+
+assert resubltnormalbar == true
 
 boolean resultsticky = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.checkIfStickyBar'()
 
 assert resultsticky == false
 
 WebUI.scrollToPosition(0, 300)
+
 boolean resultsticky2 = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.checkIfStickyBar'()
 
 assert resultsticky2 == true
-
-boolean resultCategory = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.checkCategoryButton'()
-
-assert resultCategory == true
-
-boolean resultMaterial = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.checkMaterialButton'()
-
-assert resultMaterial == true
-
-boolean resultOffers = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.checkOffersButton'()
-
-assert resultOffers == true
-
-boolean resultBrand = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.checkBrandButton'()
-
-assert resultBrand == true
-
-boolean resultPrice = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.checkPriceButton'()
-
-assert resultPrice == true
-
-boolean resultProducttype = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.checkProductTypButton'()
-
-assert resultProducttype == true
-
-boolean resultFilterandSort = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.checkFilterAndSortButton'()
-
-assert resultFilterandSort == true
-
 
 
 CustomKeywords.'onlineshop.Keywords.HomePageHelper.closeBrowser'()

@@ -48,7 +48,7 @@
    <testCaseLink>
       <guid>0a656568-114e-4848-b3a7-12b55fa011a5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/Pagination/ShowPagination</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -82,7 +82,7 @@
    <testCaseLink>
       <guid>067be077-21c1-4208-b5e7-559bf45c4b1e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/Pagination/JumpOnTheFourthBlock</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -116,7 +116,7 @@
    <testCaseLink>
       <guid>166ad0da-1253-4644-844d-57460dec5bec</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Onlineshop.TestCases/ProductPage/PLP/Pagination/JumpOnTheThirdBlock</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>

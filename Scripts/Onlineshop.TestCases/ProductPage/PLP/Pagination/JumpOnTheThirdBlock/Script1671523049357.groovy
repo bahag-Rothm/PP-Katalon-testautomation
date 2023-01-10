@@ -27,17 +27,20 @@ WebUI.callTestCase(findTestCase('Onlineshop.TestCases/SharedFolder/ClickMehrProd
 
 WebUI.callTestCase(findTestCase('Onlineshop.TestCases/SharedFolder/ClickMehrProdukteAnzeigen'), [:], FailureHandling.STOP_ON_FAILURE)
 
+
 WebUI.callTestCase(findTestCase('Onlineshop.TestCases/SharedFolder/ClickMehrProdukteAnzeigen'), [:], FailureHandling.STOP_ON_FAILURE)
+
 
 boolean result2 = CustomKeywords.'onlineshop.Keywords.PaginationHelper.clickProductInTheThirdBlock'()
 
 assert result2 == true
 
 WebUI.back()
-
+WebUI.delay(2)
 boolean result = CustomKeywords.'onlineshop.Keywords.PaginationHelper.showPagination'()
 
 assert result == true
+
 
 boolean result3 = CustomKeywords.'onlineshop.Keywords.PaginationHelper.verifyProductPresentThirdBlock'()
 
@@ -45,16 +48,22 @@ assert result3 == true
 
 CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.setViewPortsizeToMobile'()
 
+CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.navigateToOverview'(countryId, category, productNr)
+
+WebUI.delay(2)
 
 WebUI.callTestCase(findTestCase('Onlineshop.TestCases/SharedFolder/ClickMehrProdukteAnzeigen'), [:], FailureHandling.STOP_ON_FAILURE)
 
+
 WebUI.callTestCase(findTestCase('Onlineshop.TestCases/SharedFolder/ClickMehrProdukteAnzeigen'), [:], FailureHandling.STOP_ON_FAILURE)
+
 
 boolean result4 = CustomKeywords.'onlineshop.Keywords.PaginationHelper.clickProductInTheThirdBlock'()
 
 assert result4 == true
 
 WebUI.back()
+WebUI.delay(2)
 
 boolean result5 = CustomKeywords.'onlineshop.Keywords.PaginationHelper.showPagination'()
 

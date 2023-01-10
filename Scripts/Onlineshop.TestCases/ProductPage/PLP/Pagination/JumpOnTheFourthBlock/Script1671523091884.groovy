@@ -25,29 +25,35 @@ WebUI.callTestCase(findTestCase('Onlineshop.TestCases/SharedFolder/ClickMehrProd
 
 WebUI.callTestCase(findTestCase('Onlineshop.TestCases/SharedFolder/ClickMehrProdukteAnzeigen'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Onlineshop.TestCases/SharedFolder/ClickMehrProdukteAnzeigen'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Onlineshop.TestCases/SharedFolder/ClickMehrProdukteAnzeigen'), [:], FailureHandling.STOP_ON_FAILURE)
+
+
+WebUI.callTestCase(findTestCase('Onlineshop.TestCases/SharedFolder/ClickMehrProdukteAnzeigen'), [:], FailureHandling.STOP_ON_FAILURE)
+
 
 boolean result = CustomKeywords.'onlineshop.Keywords.PaginationHelper.checkLoadMoreProducts'()
 
 assert result == true
 
+
 boolean result2 = CustomKeywords.'onlineshop.Keywords.PaginationHelper.clickProductInTheFourthBlock'()
 
 assert result2 == true
 
+
 WebUI.back()
+WebUI.delay(2)
 
 boolean result3 = CustomKeywords.'onlineshop.Keywords.PaginationHelper.checkLoadPreviousProduct'()
 
 assert result3 == true
-
 boolean result4 = CustomKeywords.'onlineshop.Keywords.PaginationHelper.verifyProductPresent'()
 
 assert result4 == true
 
 CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.setViewPortsizeToMobile'()
+
 
 CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.navigateToOverview'(countryId, category, productNr)
 

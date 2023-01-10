@@ -21,7 +21,11 @@ CustomKeywords.'onlineshop.Keywords.HomePageHelper.openBrowser'(countryId)
 
 CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.navigateToOverview'(countryId, category, productNr)
 
-boolean result = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.clickBrandButton'()
+boolean resultfilterbar = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.clickFilterAndSortButton'()
+
+assert resultfilterbar == true
+
+boolean result = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.clickFilterBarBrandButton'()
 
 assert result == true
 
@@ -35,9 +39,7 @@ boolean compare = true
 
 String Product2 = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.getProductNumberButtonText'()
 
-CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.closeSideBar'()
-
-boolean result3 = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.clickPriceButton'()
+boolean result3 = CustomKeywords.'onlineshop.Keywords.ProductListingPageHelper.checkFilterBarPriceButton'()
 
 assert result3 == true
 

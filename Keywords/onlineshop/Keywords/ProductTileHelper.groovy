@@ -814,7 +814,7 @@ public class ProductTileHelper {
 				if(resultBookmark == "Označi" || resultBookmark == "Merken" || resultBookmark == "Op verlanglijstje" || resultBookmark == "Favoritos") {
 					KeywordUtil.logInfo("Bookmark button exist and the text is right");
 
-					WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BookmarkIcon/ProductWatchlistButton')) 
+					WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BookmarkIcon/ProductWatchlistButton'))
 					WebUI.click(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/SidebarIcons/CloseSideBar'))
 				}
 				String resultBookmarkpage = WebUI.getText(findTestObject('Onlineshop.Pages/ProduktePage/Elements/PLP/LabelsCategory/ProductTile/BookmarkIcon/goToWatchlistButton'), FailureHandling.OPTIONAL)

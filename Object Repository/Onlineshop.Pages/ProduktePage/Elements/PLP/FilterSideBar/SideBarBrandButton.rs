@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SideBarPriceButton</name>
+   <name>SideBarBrandButton</name>
    <tag></tag>
-   <elementGuidId>aa4ee4f1-fa04-4718-9a0f-3bef7112e66d</elementGuidId>
+   <elementGuidId>384b8243-f4fc-47d9-be7d-29860921d019</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='navigation-facet-card-header-visiblePrice']</value>
+         <value>//button[@id='navigation-facet-card-header-brands']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
